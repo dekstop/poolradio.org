@@ -167,4 +167,4 @@ events.each do |row|
   sleep n
 end
 
-puts "Found #{count} new descriptions to #{events.size} events"
+puts "Found #{count} new descriptions for #{events.size} events"
