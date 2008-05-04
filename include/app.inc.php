@@ -6,6 +6,7 @@
 
 define('HOMEPAGE_URL', 'http://www.poolradio.org/');
 define('FEED_URL', 'http://www.poolradio.org/rss');
+define('LASTFM_USERNAME', 'poolradio');
 
 // ==============
 // = main setup =
