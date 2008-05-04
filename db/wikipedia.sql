@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS wikipedia_descriptions;
+CREATE TABLE wikipedia_descriptions (
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  created_at TIMESTAMP NOT NULL,
+
+  event_id INTEGER NOT NULL,
+
+  link VARCHAR(1024) NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  
+  description VARCHAR(1000) NOT NULL
+) CHARACTER SET utf8;

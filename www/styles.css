@@ -1,0 +1,113 @@
+/* 
+	links
+*/
+
+a {
+	color: #cc0000; 
+/*	font-weight: bold;*/
+	text-decoration: none;
+}
+a:hover {
+/*	text-decoration: underline; */
+	background: #B4D5FE;
+}
+a:visited { 
+	color: #990000; 
+}
+
+
+/*
+	body
+*/
+
+body {
+	color: #000000; 
+	font-family: Verdana, Helvetica, Arial, sans-serif; 
+	font-size: 1em;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+p, ul, ol {
+	font-size: 0.8em;
+}
+
+h1 {
+	color: #333333;
+	font-family: Trebuchet MS, Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 2.3em;
+}
+h1 a, h1 a:visited { 
+	color: #333333;
+}
+h2 {
+	color: #333333;
+	font-family: Trebuchet MS, Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+}
+h2 a, h2 a:visited {
+	color: #333333;
+}
+h3 {
+/*	font-family: Trebuchet MS, Tahoma, Verdana, Helvetica, Arial, sans-serif;*/
+	font-weight: normal;
+	font-size: 1.3em;
+}
+h4 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none; /* IE, moz */
+  color: #dddddd; /* IE */
+  background-color: #dddddd; /* moz, opera */
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* ============ */
+/* = stations = */
+/* ============ */
+
+.stations {
+  width: 500px;
+}
+
+
+.stations .radiourl {
+  font-size: 1.2em;
+}
+
+.stations .message {
+  background-color: #f8f8f8;
+}
+
+.stations .body a {
+  color: #000000;
+}
+
+.stations .footer {
+  font-size: 0.8em;
+  color: #cccccc;
+}
+
+.stations .context {
+  color: #cccccc;
+}
+
+.stations .context a {
+  margin-left: 1em;
+  color: #cccccc;
+}
+
+.credits {
+  color: #cccccc;
+}
+.credits a {
+  color: #cccccc;
+}

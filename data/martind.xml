@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss.xsl" media="screen"?>
+<rss version="2.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
+   <channel>
+      <language>en</language>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-sa/2.0/uk/</creativeCommons:license>
+            <ttl>7200</ttl>
+      <docs>http://www.audioscrobbler.net/data/webservices</docs>      <title>martind's Manual Recommendations</title>
+      <link>http://www.last.fm/user/martind/</link>
+      <description>Items manually recommended.</description>
+      <item>
+         <title>Shout Out Louds - Our Ill Wills</title>
+         <link>http://www.last.fm/music/Shout+Out+Louds/Our+Ill+Wills</link>
+         <description><![CDATA[pellitero says: "The Cure + Los Campesinos! = Our Ill Wills"]]> </description>
+      </item>
+      <item>
+         <title>Atmosphere - When Life Gives You Lemons, You Paint That Shit Gold - Standard Edition</title>
+         <link>http://www.last.fm/music/Atmosphere/When+Life+Gives+You+Lemons%2C+You+Paint+That+Shit+Gold+-+Standard+Edition</link>
+         <description><![CDATA[massdosage says: "New Atmosphere album. I just started listening to it and I'm liking - they seem to have added quite a bit of live instrumentation to their sound. &quot;Dreamer&quot; is dope."]]> </description>
+      </item>
+      <item>
+         <title>HipGnosis – Middle Finger (feat. Duckman, Corn Tha Coon, &amp; Krukid) (clean)</title>
+         <link>http://www.last.fm/music/HipGnosis/_/Middle%2BFinger%2B%2528feat.%2BDuckman%252C%2BCorn%2BTha%2BCoon%252C%2B%2526%2BKrukid%2529%2B%2528clean%2529</link>
+         <description><![CDATA[massdosage says: "Check it out!"]]> </description>
+      </item>
+      <item>
+         <title>Kiyo</title>
+         <link>http://www.last.fm/music/Kiyo</link>
+         <description><![CDATA[martind says: "“Enjoy warm noise from Japan.”"]]> </description>
+      </item>
+      <item>
+         <title>Colder – To The Music</title>
+         <link>http://www.last.fm/music/Colder/_/To+The+Music</link>
+         <description><![CDATA[Clacaby says: "Hey, I think you might like Colder – To The Music, check it out."]]> </description>
+      </item>
+      <item>
+         <title>Rahsaan Roland Kirk</title>
+         <link>http://www.last.fm/music/Rahsaan+Roland+Kirk</link>
+         <description><![CDATA[martind says: "double sax! (posted by james)"]]> </description>
+      </item>
+      <item>
+         <title>Buck 65 – Square Three</title>
+         <link>http://www.last.fm/music/Buck+65/_/Square+Three</link>
+         <description><![CDATA[massdosage says: "Check it out!"]]> </description>
+      </item>
+      <item>
+         <title>Drums</title>
+         <link>http://www.last.fm/music/Drums</link>
+         <description><![CDATA[martind says: "Hey, I think you might like
+            Drums
+    , check it out."]]> </description>
+      </item>
+      <item>
+         <title>The Gadsdens – The Sailor Song</title>
+         <link>http://www.last.fm/music/The+Gadsdens/_/The+Sailor+Song</link>
+         <description><![CDATA[pellitero says: "Esta recomendación sobre The Gadsdens – The Sailor Song no te dejará indiferente, ¡dale una oportunidad!"]]> </description>
+      </item>
+      <item>
+         <title>The Gadsdens – The Sailor Song</title>
+         <link>http://www.last.fm/music/The+Gadsdens/_/The+Sailor+Song</link>
+         <description><![CDATA[pellitero says: "Esta recomendación sobre The Gadsdens – The Sailor Song no te dejará indiferente, ¡dale una oportunidad!"]]> </description>
+      </item>
+   </channel>
+</rss>

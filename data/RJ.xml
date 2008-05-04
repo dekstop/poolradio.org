@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss.xsl" media="screen"?>
+<rss version="2.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
+   <channel>
+      <language>en</language>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-sa/2.0/uk/</creativeCommons:license>
+            <ttl>7200</ttl>
+      <docs>http://www.audioscrobbler.net/data/webservices</docs>      <title>RJ's Manual Recommendations</title>
+      <link>http://www.last.fm/user/RJ/</link>
+      <description>Items manually recommended.</description>
+      <item>
+         <title>Shout Out Louds - Our Ill Wills</title>
+         <link>http://www.last.fm/music/Shout+Out+Louds/Our+Ill+Wills</link>
+         <description><![CDATA[pellitero says: "The Cure + Los Campesinos! = Our Ill Wills"]]> </description>
+      </item>
+      <item>
+         <title>Prince ‚Äì Sometimes it Snows in April</title>
+         <link>http://www.last.fm/music/Prince/_/Sometimes+it+Snows+in+April</link>
+         <description><![CDATA[makuma79 says: "I'm not a great fan of Prince ‚Äì But it's not everyday that it Snows in April :)"]]> </description>
+      </item>
+      <item>
+         <title>Friendly Fires</title>
+         <link>http://www.last.fm/music/Friendly+Fires</link>
+         <description><![CDATA[BecFrost says: "Hey guys, i saw this band support jack penate on tuesday, and they're amazing live! Thought you might like a gander :)xx"]]> </description>
+      </item>
+      <item>
+         <title>Golden Death Music</title>
+         <link>http://www.last.fm/music/Golden+Death+Music</link>
+         <description><![CDATA[goldendeath says: "Hello 
+I hope you are doing very well today and all days.
+I'm writing this message to let people know that I just put some new music up on my page , and should have another album out very soon! I also made all the tracks on that album free for download.  If you are unfamiliar with my music, I'm sorry to have bothered you, but I invite you to check it out.  I truly wish only the best for you all.  Thanks for your time!
+
+/Michael
+www.myspace.com/goldendeathmusic"]]> </description>
+      </item>
+      <item>
+         <title>The Playing Fields - Hello New World</title>
+         <link>http://www.last.fm/music/The+Playing+Fields/Hello+New+World</link>
+         <description><![CDATA[CactiShed says: "Hey, I think you might like 
+The Playing Fields - Hello New World,
+check it out.
+Let me know what you think..."]]> </description>
+      </item>
+      <item>
+         <title>The Gadsdens ‚Äì The Sailor Song</title>
+         <link>http://www.last.fm/music/The+Gadsdens/_/The+Sailor+Song</link>
+         <description><![CDATA[pellitero says: "Esta recomendaci√≥n sobre The Gadsdens ‚Äì The Sailor Song no te dejar√° indiferente, ¬°dale una oportunidad!"]]> </description>
+      </item>
+      <item>
+         <title>The Gadsdens ‚Äì The Sailor Song</title>
+         <link>http://www.last.fm/music/The+Gadsdens/_/The+Sailor+Song</link>
+         <description><![CDATA[pellitero says: "Esta recomendaci√≥n sobre The Gadsdens ‚Äì The Sailor Song no te dejar√° indiferente, ¬°dale una oportunidad!"]]> </description>
+      </item>
+      <item>
+         <title>Magna Carta ‚Äì Parliament Hill</title>
+         <link>http://www.last.fm/music/Magna+Carta/_/Parliament+Hill</link>
+         <description><![CDATA[foreverautumn says: "Hey, I think you might like Magna Carta ‚Äì Parliament Hill, check it out."]]> </description>
+      </item>
+      <item>
+         <title>Selen</title>
+         <link>http://www.last.fm/music/Selen</link>
+         <description><![CDATA[-SELEN- says: "Please discover SELEN ....
+Thanks a lot
+http://www.lastfm.fr/music/Selen"]]> </description>
+      </item>
+      <item>
+         <title>PC Music Maker ‚Äì Scottish Hardstyle</title>
+         <link>http://www.last.fm/music/PC+Music+Maker/_/Scottish+Hardstyle</link>
+         <description><![CDATA[foreverautumn says: "Hallo, ich denke, dass dir PC Music Maker ‚Äì Scottish Hardstyle gefallen k√∂nnte."]]> </description>
+      </item>
+   </channel>
+</rss>
