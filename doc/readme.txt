@@ -22,7 +22,7 @@ are groups a good source? (for tags, station URLs) -> group forums, journals
 - http://last.fm/group/Genre-free+tags%21
 - http://last.fm/group/Track-Tag+Bitches
 - http://last.fm/group/Tag+Top
-
+- http://last.fm/group/The+1+Percenters
          
 journals?
 - http://last.fm/user/onecaseman/journal/2007/01/28/328873/
