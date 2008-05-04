@@ -14,7 +14,7 @@ if (!$db) {
   <meta name="generator" content="MicroLink 5.61">
 
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="<?= FEED_URL ?>">
 </head>
 <body>
 
@@ -36,7 +36,7 @@ if (!$db) {
 	<span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
     <?
-    $result = query_for_latest(10, 24*2);
+    $result = query_for_latest(10, 24);
 	if (mysql_num_rows($result) > 0) {
 	?>
 	<h3>Recently Added</h3>

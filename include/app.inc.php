@@ -5,6 +5,7 @@
 // =========
 
 define('HOMEPAGE_URL', 'http://www.poolradio.org/');
+define('FEED_URL', 'http://www.poolradio.org/rss');
 
 // ==============
 // = main setup =
