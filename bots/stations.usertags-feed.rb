@@ -77,7 +77,7 @@ end
 
 puts "#{users.size} users in queue"
 
-users.each do |username|
+users.sort_by { rand }.each do |username|
   feed_url = @prefs[:url] % [username]
   puts "#{feed_url} ..."
   data = http_get(feed_url)
