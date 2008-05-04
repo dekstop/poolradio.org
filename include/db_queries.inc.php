@@ -29,7 +29,8 @@ function query_for_random($num=10) {
             "LEFT OUTER JOIN wikipedia_descriptions w ON e.id=w.event_id " .
             #"ORDER BY RAND() LIMIT %d",
             #mysql_real_escape_string($num),
-            "WHERE e.id IN (%s)",
+            "WHERE e.id IN (%s)" .
+            "ORDER BY RAND()",
             implode(', ', $ids));
     }
     
