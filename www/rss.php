@@ -1,3 +1,4 @@
+<? header("Content-Type: application/rss+xml"); ?>
 <? print '<?xml version="1.0" encoding="utf-8"?>'; ?>
 <? include '../include/app.inc.php' ?>
 <rss version="2.0" 
