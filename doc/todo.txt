@@ -36,3 +36,5 @@ labels?
 - site searches: last.fm, ...?
 - google blog search
 - musicbrainz, discogs?
+- wikipedia directly... (check api)
+- technorati

@@ -1,5 +1,5 @@
 <? print '<?xml version="1.0" encoding="utf-8"?>'; ?>
-<? include '../app/app.inc.php' ?>
+<? include '../include/app.inc.php' ?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>pool radio: Last.fm radio stations</title>
