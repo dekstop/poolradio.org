@@ -23,13 +23,13 @@ require 'global_prefs'
   # pursue redirect headers?
   :handle_redirects => false,
   # sleep between fetches
-  :min_sleep => 10,
+  :min_sleep => 5,
   :max_sleep => 30,
 
   # only select from events that were created in the last n hours
   :subtime_window => '48:0:0.0',
   # don't scrape too much in one go
-  :max_google_requests => 200,
+  :max_google_requests => 500,
   # ...
   :url => 'http://google.com/search?hl=en&q=site:wikipedia.org+%s',
 })
