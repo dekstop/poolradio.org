@@ -26,7 +26,7 @@ require 'global_prefs'
   :handle_redirects => true,
 
   :url => 'http://ws.audioscrobbler.com/1.0/user/%s/tags.xml',
-  :sleep => 1,
+  :sleep => 3,
   
   # min number of elements required per tag
   :min_tag_count => 50,
