@@ -35,15 +35,19 @@ if (!$db) {
 	<p>Recommend great Last.fm tag radio stations to <a href="http://last.fm/user/poolradio/">poolradio</a>.<br/>
 	<span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
-    <h3>Recently Added</h3>
-    <div style="font-size:0.7em" class="stations">
     <?
-    $result = query_for_latest(10);
-    while ($row = mysql_fetch_assoc($result)) {
+    $result = query_for_latest(10, 24*2);
+	if (mysql_num_rows($result) > 0) {
+	?>
+	<h3>Recently Added</h3>
+    <div style="font-size:0.7em" class="stations">
+	<?
+    	while ($row = mysql_fetch_assoc($result)) {
     ?>
     <p><?= build_station_html($row) ?></p>
     <?
-    }
+    	}
+	}
     ?>
     </div></td>
 </tr>
