@@ -31,7 +31,7 @@ require 'global_prefs'
   # don't scrape too much in one go
   :max_google_requests => 500,
   # ...
-  :url => 'http://google.com/search?hl=en&q=site:wikipedia.org+%s',
+  :url => 'http://www.google.com/search?hl=en&q=site:wikipedia.org+%s',
 })
 
 # ===========
