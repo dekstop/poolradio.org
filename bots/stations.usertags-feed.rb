@@ -91,7 +91,7 @@ users.sort_by { rand }.each do |username|
     count = item.elements['count'].text.to_i
     if (count >= @prefs[:min_tag_count])
       link = 'http://last.fm/user/%s/tags/%s' % [CGI.escape(username), CGI.escape(tagname)]
-      radiourl = 'lastfm://usertags/%s' % [CGI.escape(tagname)]
+      radiourl = 'lastfm://usertags/%s/%s' % [CGI.escape(username), CGI.escape(tagname)]
       title = '%s' % [tagname]
       message = 'User Tag Radio'
       
