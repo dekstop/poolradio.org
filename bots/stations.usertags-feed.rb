@@ -126,5 +126,6 @@ users.each do |username|
     end
   end
   puts "Inserted #{count} new events"
+  $stdout.flush
 end
 

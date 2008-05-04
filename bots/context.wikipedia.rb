@@ -159,7 +159,7 @@ events.each do |row|
     require 'pp'
     pp $!
   end
-  
+  $stdout.flush
   sleep rand(@prefs[:max_sleep] - @prefs[:min_sleep]) + @prefs[:min_sleep]
 end
 

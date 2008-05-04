@@ -130,6 +130,7 @@ doc.elements.each('rss/channel/item') do |item|
       end
     end
   end
+  $stdout.flush
 end
 
 puts "Inserted #{count} new events"
