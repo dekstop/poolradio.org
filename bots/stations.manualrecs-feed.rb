@@ -13,24 +13,24 @@ require 'time'
 require 'cgi'
 require 'uri'
 
+$: << File.expand_path(File.dirname($0))
+require 'global_prefs'
+
 
 # =========
 # = prefs =
 # =========
 
-@prefs = {
-  :user_agent => 'radiobot v1 http://martin.dekstop.de/',
+@prefs = GLOBAL_PREFS.merge({
   # pursue redirect headers?
   :handle_redirects => true,
 
-  :url => 'http://ws.audioscrobbler.com/1.0/user/martind/manualrecs.rss',
+  :url => 'http://ws.audioscrobbler.com/1.0/user/poolradio/manualrecs.rss',
   
   :message_pattern => /^(.*?) says: "(.*)"$/,
   
-  :source_id => 2,
-  
-  :db_url => 'mysql://radiobot:radiobot@localhost/radiobot'
-}
+  :source_id => 2
+})
 
 # ===========
 # = helpers =
@@ -75,7 +75,7 @@ end
 
 # connect
 DB = Sequel.connect(
-  @prefs[:db_url], 
+  @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
 events = DB.from(:events)

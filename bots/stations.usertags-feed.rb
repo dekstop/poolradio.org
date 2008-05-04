@@ -13,13 +13,15 @@ require 'time'
 require 'cgi'
 require 'uri'
 
+$: << File.expand_path(File.dirname($0))
+require 'global_prefs'
+
 
 # =========
 # = prefs =
 # =========
 
-@prefs = {
-  :user_agent => 'radiobot v1 http://martin.dekstop.de/',
+@prefs = GLOBAL_PREFS.merge({
   # pursue redirect headers?
   :handle_redirects => true,
 
@@ -29,10 +31,8 @@ require 'uri'
   # min number of elements required per tag
   :min_tag_count => 50,
   
-  :source_id => 3,
-  
-  :db_url => 'mysql://radiobot:radiobot@localhost/radiobot'
-}
+  :source_id => 3
+})
 
 # ===========
 # = helpers =
@@ -42,7 +42,7 @@ def http_get(url)
   uri = URI.parse(url)
   remote_domain, remote_path = uri.host, uri.request_uri
   data = Net::HTTP.start(remote_domain) do |http|
-    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:user_agent]})
+    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:useragent]})
     response = http.request(req)
     # handle HTTP responses "301 moved permanently", "302 found"
     if @prefs[:handle_redirects]
@@ -62,7 +62,7 @@ end
 
 # connect
 DB = Sequel.connect(
-  @prefs[:db_url], 
+  @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
 usertags_users = DB.from(:usertags_users)

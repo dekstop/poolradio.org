@@ -10,7 +10,7 @@ if (!$db) {
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>radiobot: Last.fm radio stations</title>
+  <title>poolradio: Last.fm radio stations</title>
   <meta name="generator" content="MicroLink 5.61">
 
   <link rel="stylesheet" href="styles.css" type="text/css">
@@ -32,7 +32,7 @@ if (!$db) {
     ?>
     </div></td>
   <td valign="top">
-	<p>Recommend great Last.fm tag radio stations to <a href="http://last.fm/user/radiobot/">radiobot</a>.<br/>
+	<p>Recommend great Last.fm tag radio stations to <a href="http://last.fm/user/poolradio/">poolradio</a>.<br/>
 	<span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
     <h3>Recently Added</h3>

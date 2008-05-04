@@ -2,7 +2,7 @@
 <? include '../app/app.inc.php' ?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
-    <title>radiobot: Last.fm radio stations</title>
+    <title>poolradio: Last.fm radio stations</title>
     <link><?= HOMEPAGE_URL ?></link>
     <description>...</description>
     <lastBuildDate><?= date('r') ?></lastBuildDate>

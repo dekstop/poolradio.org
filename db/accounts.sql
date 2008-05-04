@@ -1,2 +1,2 @@
-GRANT SELECT, INSERT, UPDATE ON radiobot.* TO 'radiobot'@'localhost' IDENTIFIED BY 'radiobot';
+GRANT SELECT, INSERT, UPDATE ON poolradio_org.* TO 'radiobot'@'%' IDENTIFIED BY 'radiobot';
 

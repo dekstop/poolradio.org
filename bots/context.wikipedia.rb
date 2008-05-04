@@ -11,22 +11,22 @@ require 'net/http'
 require 'cgi'
 require 'uri'
 
+$: << File.expand_path(File.dirname($0))
+require 'global_prefs'
+
 
 # =========
 # = prefs =
 # =========
 
-@prefs = {
-  :user_agent => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)',
+@prefs = GLOBAL_PREFS.merge({
   # pursue redirect headers?
   :handle_redirects => true,
   # sleep between fetches
   :sleep => 1,
 
-  :url => 'http://google.com/search?q=site:wikipedia.org+%s',
-  
-  :db_url => 'mysql://radiobot:radiobot@localhost/radiobot'
-}
+  :url => 'http://google.com/search?q=site:wikipedia.org+%s'
+})
 
 # ===========
 # = helpers =
@@ -36,7 +36,7 @@ def http_get(url)
   uri = URI.parse(url)
   remote_domain, remote_path = uri.host, uri.request_uri
   data = Net::HTTP.start(remote_domain) do |http|
-    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:user_agent]})
+    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:cloaking_useragent]})
     response = http.request(req)
     # handle HTTP responses "301 moved permanently", "302 found"
     if @prefs[:handle_redirects]
@@ -100,7 +100,7 @@ end
 
 # connect
 DB = Sequel.connect(
-  @prefs[:db_url], 
+  @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
 wd = DB.from(:wikipedia_descriptions)

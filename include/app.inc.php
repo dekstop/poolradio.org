@@ -4,7 +4,7 @@
 // = prefs =
 // =========
 
-define('HOMEPAGE_URL', 'http://127.0.0.1/~mongo/radiobot/www/');
+define('HOMEPAGE_URL', 'http://www.poolradio.org/');
 
 // ==============
 // = main setup =
