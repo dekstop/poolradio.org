@@ -74,7 +74,6 @@ if (users.size==0)
   exit 1
 end
 
-count = 0
 users.each do |username|
   feed_url = @prefs[:url] % [username]
   puts "#{feed_url} ..."
@@ -82,13 +81,14 @@ users.each do |username|
   #data = File.read('../data/usertags-jirkanne.xml')
 
   # iterate
+  count = 0
   doc = REXML::Document.new(data)
   doc.elements.each('toptags/tag') do |item|
     tagname = item.elements['name'].text
     count = item.elements['count'].text.to_i
     if (count >= @prefs[:min_tag_count])
       link = 'http://last.fm/user/%s/tags/%s' % [username, tagname]
-      radiourl = 'lastfm://usertags/%s/%s' % [username, tagname]
+      radiourl = 'lastfm://globaltags/%s' % [tagname]
       title = '%s' % [tagname]
       message = 'User Tag Radio'
       # update
@@ -110,6 +110,6 @@ users.each do |username|
       end
     end
   end
+  puts "Inserted #{count} new events"
 end
 
-puts "Inserted #{count} new events"
