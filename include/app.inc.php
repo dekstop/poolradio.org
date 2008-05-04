@@ -28,11 +28,11 @@ require_once('html_builders.inc.php');
 // ======
 
 function getDB() {
-	$db = mysql_connect('127.0.0.1:3306', 'radiobot', 'radiobot');
-	if (!$db || false==mysql_select_db('poolradio_org')) {
-		return null;
-	}
-	return $db;
+    $db = mysql_connect('127.0.0.1:3306', 'radiobot', 'radiobot');
+    if (!$db || false==mysql_select_db('poolradio_org')) {
+        return null;
+    }
+    return $db;
 }
 
 ?>
