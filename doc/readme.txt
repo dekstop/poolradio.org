@@ -2,3 +2,31 @@ requires:
 - mysql
 - ruby with gems: mysql, sequel, hpricot
 - php
+
+ ========
+ = todo =
+ ========
+
+are groups a good source? (for tags, station URLs) -> group forums, journals
+- http://last.fm/group/Subscribers+and+their+tag+radio+stations/
+- http://last.fm/group/Music+Advice+Center
+- http://last.fm/group/netlabels
+- http://last.fm/group/Subscribers+and+their+tag+radio+stations
+- http://last.fm/group/The+Special+Interest+Tag+Radio+Collective
+- http://last.fm/group/Next+Big+Things+-+NBTs
+- http://last.fm/group/Consistantly+NEW+dance+and+electronic
+- http://last.fm/group/Internet%20Researchers
+- http://last.fm/group/Music%202.0
+- http://last.fm/group/Obscure+Music+Recommendations
+- http://last.fm/group/We+Like+Playlists+With+Special+Meaning
+- http://last.fm/group/Genre-free+tags%21
+- http://last.fm/group/Track-Tag+Bitches
+- http://last.fm/group/Tag+Top
+
+         
+journals?
+- http://last.fm/user/onecaseman/journal/2007/01/28/328873/
+- http://last.fm/user/meyde/journal/2007/07/21/480651/
+         
+labels?  
+- http://last.fm/label/Static+Discos
