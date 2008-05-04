@@ -125,6 +125,9 @@ users.sort_by { rand }.each do |username|
       end
     end
   end
+  
+  sleep @prefs[:sleep]
+  
   puts "Inserted #{count} new events"
   $stdout.flush
 end
