@@ -10,7 +10,7 @@ if (!$db) {
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>poolradio: Last.fm radio stations</title>
+  <title>pool radio: Last.fm radio stations</title>
   <meta name="generator" content="MicroLink 5.61">
 
   <link rel="stylesheet" href="styles.css" type="text/css">

@@ -29,7 +29,7 @@ require 'global_prefs'
   # only select from events that were created in the last n hours
   :subtime_window => '48:0:0.0',
   # don't scrape too much in one go
-  :max_google_requests => 50,
+  :max_google_requests => 200,
   # ...
   :url => 'http://google.com/search?hl=en&q=site:wikipedia.org+%s',
 })
