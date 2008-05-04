@@ -14,7 +14,7 @@ if (!$db) {
   <meta name="generator" content="MicroLink 5.61">
 
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
 </head>
 <body>
 
