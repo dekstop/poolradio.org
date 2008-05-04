@@ -26,6 +26,7 @@ INSERT INTO sources(id,code,name,description) values(2,'manualrecs-feed', 'Last.
 INSERT INTO sources(id,code,name,description) values(3,'usertags', 'Last.fm User Tags', null);
 INSERT INTO sources(id,code,name,description) values(4,'globaltags', 'Last.fm Global Tags', null);
 
+
 INSERT INTO events(source_id,username,link,radiourl,title,message) VALUES (
   1, 'martind',
   'http://www.last.fm/listen/globaltags/doujin',
