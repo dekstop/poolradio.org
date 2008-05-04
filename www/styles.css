@@ -30,10 +30,6 @@ body {
 	margin-bottom: 30px;
 }
 
-p, ul, ol {
-	font-size: 0.8em;
-}
-
 h1 {
 	color: #333333;
 	font-family: Trebuchet MS, Tahoma, Verdana, Helvetica, Arial, sans-serif;
@@ -105,9 +101,21 @@ hr {
   color: #cccccc;
 }
 
-.credits {
+p.about {
+  font-size: 0.8em;
+}
+
+p.about .credits {
   color: #cccccc;
 }
-.credits a {
+p.about .credits a {
+  color: #cccccc;
+}
+
+.more {
+  margin-top: 2em;
+  color: #cccccc;
+}
+.more a {
   color: #cccccc;
 }
