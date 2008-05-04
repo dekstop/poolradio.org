@@ -23,10 +23,15 @@ require 'global_prefs'
   # pursue redirect headers?
   :handle_redirects => false,
   # sleep between fetches
-  :sleep => 10,
+  :min_sleep => 10,
+  :max_sleep => 30,
 
-  :url => 'http://google.com/search?q=site:wikipedia.org+%s',
+  # only select from events that were created in the last n hours
+  :subtime_window => '48:0:0.0',
+  # don't scrape too much in one go
   :max_google_requests => 50,
+  # ...
+  :url => 'http://google.com/search?q=site:wikipedia.org+%s',
 })
 
 # ===========
@@ -80,9 +85,7 @@ def extract_description(doc)
   end
 end
 
-def fetch_description(title)
-  url = @prefs[:url] % [CGI.escape(title)]
-  puts "#{url} ..."
+def fetch_description(url)
   data = http_get(url)
   #data = File.read('../data/google-wikipedia-search.html')
   doc = Hpricot.parse(data)
@@ -110,9 +113,11 @@ wd = DB.from(:wikipedia_descriptions)
 # (limit to newer events so we don't keep re-fecthing the same stuff over and over
 # in cases where we always get an empty result)
 count = 0
-events = DB['SELECT e.id AS id, e.title AS title FROM events e ' +
+query = ('SELECT e.id AS id, e.title AS title FROM events e ' +
   'LEFT OUTER JOIN wikipedia_descriptions w ON e.id=w.event_id ' +
-  'WHERE w.id IS NULL AND e.created_at>subtime(now(), "48:0:0.0")']
+  'WHERE w.id IS NULL AND e.created_at>subtime(now(), "%s") ' +
+  'ORDER BY RAND() LIMIT %d') % [@prefs[:subtime_window], @prefs[:max_google_requests]]
+events = DB[query]
 
 # sequel does lazy loading, yet doesn't seem to support nested calls -> load records manually
 events = events.map { |e| e }
@@ -124,7 +129,10 @@ end
 
 events.each do |row|  
   begin
-    desc = fetch_description(row[:title])
+    url = @prefs[:url] % [CGI.escape(row[:title])]
+    puts "#{url} ..."
+    desc = fetch_description(url)
+    
     unless(desc.nil?)
       require 'pp'
       wd << {
@@ -149,7 +157,7 @@ events.each do |row|
     pp $!
   end
   
-  sleep @prefs[:sleep]
+  sleep rand(@prefs[:max_sleep] - @prefs[:min_sleep]) + @prefs[:min_sleep]
 end
 
 puts "Found #{count} new descriptions to #{events.size} events"

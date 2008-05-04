@@ -66,7 +66,6 @@ DB = Sequel.connect(
   :logger => nil #Logger.new('db.log')
 )
 usertags_users = DB.from(:usertags_users)
-events = DB.from(:events)
 
 users = usertags_users.all.map { |u| u[:username] }
 if (users.size==0)
@@ -91,22 +90,34 @@ users.each do |username|
       radiourl = 'lastfm://globaltags/%s' % [tagname]
       title = '%s' % [tagname]
       message = 'User Tag Radio'
-      # update
-      begin
-        events << {
-          :source_id => @prefs[:source_id],
-          :username => username,
-          :link => link,
-          :radiourl => radiourl,
-          :title => title,
-          :message => message
-        }
-        count += 1
-      rescue Mysql::Error
-        puts "Can't insert row: #{$!.message}"
-      rescue Exception
-        require 'pp'
-        pp $!
+      
+      # make sure we don't create dupes
+      existing_events = DB[:events].filter({ 
+        :source_id => @prefs[:source_id],
+        :radiourl => radiourl,
+        :username => username
+      })
+
+      if (existing_events.size > 0)
+        puts "Skipping: entry for #{radiourl} by user #{username} already exists"
+      else
+        # update
+        begin
+          DB[:events] << {
+            :source_id => @prefs[:source_id],
+            :username => username,
+            :link => link,
+            :radiourl => radiourl,
+            :title => title,
+            :message => message
+          }
+          count += 1
+        rescue Mysql::Error
+          puts "Can't insert row: #{$!.message}"
+        rescue Exception
+          require 'pp'
+          pp $!
+        end
       end
     end
   end

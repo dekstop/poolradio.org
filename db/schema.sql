@@ -10,9 +10,7 @@ CREATE TABLE events (
   radiourl VARCHAR(1024) NOT NULL,
   
   title VARCHAR(100),
-  message VARCHAR(1000),
-  
-  CONSTRAINT UNIQUE INDEX (source_id, username, radiourl)
+  message VARCHAR(1000)
 ) CHARACTER SET utf8;
 
 DROP TABLE IF EXISTS sources;

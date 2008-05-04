@@ -40,7 +40,7 @@ def http_get(url)
   uri = URI.parse(url)
   remote_domain, remote_path = uri.host, uri.request_uri
   data = Net::HTTP.start(remote_domain) do |http|
-    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:user_agent]})
+    req = Net::HTTP::Get.new(remote_path, {'User-Agent' => @prefs[:useragent]})
     response = http.request(req)
     # handle HTTP responses "301 moved permanently", "302 found"
     if @prefs[:handle_redirects]
@@ -78,8 +78,6 @@ DB = Sequel.connect(
   @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
-events = DB.from(:events)
-
 # fetch
 data = http_get(@prefs[:url])
 #data = File.read('../data/martind.xml')
@@ -100,28 +98,36 @@ doc.elements.each('rss/channel/item') do |item|
   
   radiourl = build_radiourl_from_lastfm_listen_url(link)
   
-  username = 'martin'
-  radiourl = 'abc'
-  
   if (radiourl.nil?)
     puts "Can't convert to radio URL: #{link}"
   else
-    # update
-    begin
-      events << {
-        :source_id => @prefs[:source_id],
-        :username => username,
-        :link => link,
-        :radiourl => radiourl,
-        :title => title,
-        :message => description
-      }
-      count += 1
-    rescue Mysql::Error
-      puts "Can't insert row: #{$!.message}"
-    rescue Exception
-      require 'pp'
-      pp $!
+    # make sure we don't create dupes
+    existing_events = DB[:events].filter({ 
+      :source_id => @prefs[:source_id],
+      :radiourl => radiourl,
+      :username => username
+    })
+    
+    if (existing_events.size > 0)
+      puts "Skipping: entry for #{radiourl} by user #{username} already exists"
+    else
+      # update
+      begin
+        DB[:events] << {
+          :source_id => @prefs[:source_id],
+          :username => username,
+          :link => link,
+          :radiourl => radiourl,
+          :title => title,
+          :message => description
+        }
+        count += 1
+      rescue Mysql::Error
+        puts "Can't insert row: #{$!.message}"
+      rescue Exception
+        require 'pp'
+        pp $!
+      end
     end
   end
 end
