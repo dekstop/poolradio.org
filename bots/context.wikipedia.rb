@@ -136,11 +136,9 @@ events.each do |row|
     puts "#{url} ..."
     desc = fetch_description(url)
     
-    if(desc[:description].nil?)
+    if(desc.nil? || desc[:description].nil?)
       puts 'Could not extract a description from that page'
     else
-      require 'pp'
-      pp desc
       DB[:wikipedia_descriptions] << {
         :event_id => row[:id],
         :title => desc[:title],
