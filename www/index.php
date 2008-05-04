@@ -33,7 +33,7 @@ if (!$db) {
     </div>
     <p class="more"><a href="<?= HOMEPAGE_URL ?>">Show me more</a></p></td>
   <td valign="top">
-    <p class="about">Recommend great Last.fm tag radio stations to <a href="http://last.fm/user/poolradio/">poolradio</a>.<br/>
+    <p class="about">Recommend great Last.fm tag radio stations to <a href="http://www.last.fm/user/poolradio/">poolradio</a>.<br/>
     <span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
     <?

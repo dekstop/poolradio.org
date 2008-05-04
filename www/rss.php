@@ -25,7 +25,7 @@ while ($row = mysql_fetch_assoc($result)) {
       <link><?= $row['link'] ?></link> 
       <description><![CDATA[ 
         <p>Radio URL: <a href="<?= $row['radiourl'] ?>"><?= htmlspecialchars($row['radiourl']) ?></a></p> 
-        <p>By: <a href="http://last.fm/user/<?= $row['username'] ?>"><?= htmlspecialchars($row['username']) ?></a></p> 
+        <p>By: <a href="http://www.last.fm/user/<?= $row['username'] ?>"><?= htmlspecialchars($row['username']) ?></a></p> 
         <p><?= $row['message'] ?></p>
         ]]></description>
       <dc:creator><?= $row['username'] ?></dc:creator>
