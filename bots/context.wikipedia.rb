@@ -163,7 +163,10 @@ events.each do |row|
     pp $!
   end
   $stdout.flush
-  sleep rand(@prefs[:max_sleep] - @prefs[:min_sleep]) + @prefs[:min_sleep]
+  
+  n = rand(@prefs[:max_sleep] - @prefs[:min_sleep]) + @prefs[:min_sleep]
+  puts "Sleeping for #{n} seconds..."
+  sleep n
 end
 
 puts "Found #{count} new descriptions to #{events.size} events"
