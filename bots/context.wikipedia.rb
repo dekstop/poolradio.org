@@ -21,11 +21,12 @@ require 'global_prefs'
 
 @prefs = GLOBAL_PREFS.merge({
   # pursue redirect headers?
-  :handle_redirects => true,
+  :handle_redirects => false,
   # sleep between fetches
-  :sleep => 1,
+  :sleep => 10,
 
-  :url => 'http://google.com/search?q=site:wikipedia.org+%s'
+  :url => 'http://google.com/search?q=site:wikipedia.org+%s',
+  :max_google_requests => 50,
 })
 
 # ===========
@@ -138,6 +139,11 @@ events.each do |row|
     puts "Can't insert row: #{$!.message}"
     require 'pp'
     pp $!
+  rescue RuntimeError
+    if ($!.message =~ /^HTTP 302.*/)
+      puts "#{$!.message} -- looks like we're being throttled"
+      exit 1
+    end
   rescue Exception
     require 'pp'
     pp $!
