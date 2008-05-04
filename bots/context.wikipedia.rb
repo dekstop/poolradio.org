@@ -107,7 +107,6 @@ DB = Sequel.connect(
   @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
-wd = DB.from(:wikipedia_descriptions)
 
 # find events without description
 # (limit to newer events so we don't keep re-fecthing the same stuff over and over
@@ -117,6 +116,8 @@ query = ('SELECT e.id AS id, e.title AS title FROM events e ' +
   'LEFT OUTER JOIN wikipedia_descriptions w ON e.id=w.event_id ' +
   'WHERE w.id IS NULL AND e.created_at>subtime(now(), "%s") ' +
   'ORDER BY RAND() LIMIT %d') % [@prefs[:subtime_window], @prefs[:max_google_requests]]
+
+puts 'Loading events...'
 events = DB[query]
 
 # sequel does lazy loading, yet doesn't seem to support nested calls -> load records manually
@@ -127,6 +128,8 @@ if (events.size==0)
   exit
 end
 
+puts "#{events.size} events in queue"
+
 events.each do |row|  
   begin
     url = @prefs[:url] % [CGI.escape(row[:title])]
@@ -135,7 +138,7 @@ events.each do |row|
     
     unless(desc.nil?)
       require 'pp'
-      wd << {
+      DB[:wikipedia_descriptions] << {
         :event_id => row[:id],
         :title => desc[:title],
         :link => desc[:link],

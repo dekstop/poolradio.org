@@ -65,6 +65,8 @@ DB = Sequel.connect(
   @prefs[:db][:url], 
   :logger => nil #Logger.new('db.log')
 )
+
+puts 'Loading usernames...'
 usertags_users = DB.from(:usertags_users)
 
 users = usertags_users.all.map { |u| u[:username] }
@@ -72,6 +74,8 @@ if (users.size==0)
   puts "No users in queue"
   exit 1
 end
+
+puts "#{users.size} users in queue"
 
 users.each do |username|
   feed_url = @prefs[:url] % [username]
