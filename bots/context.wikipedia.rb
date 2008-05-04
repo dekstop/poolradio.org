@@ -148,9 +148,10 @@ events.each do |row|
       count += 1
     end
   rescue Mysql::Error
-    puts "Can't insert row: #{$!.message}"
+    puts "Mysql error: #{$!.message}"
     require 'pp'
     pp $!
+    exit 1
   rescue RuntimeError
     if ($!.message =~ /^HTTP 302.*/)
       puts "#{$!.message} -- looks like we're being throttled"

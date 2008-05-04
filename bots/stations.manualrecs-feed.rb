@@ -123,7 +123,10 @@ doc.elements.each('rss/channel/item') do |item|
         }
         count += 1
       rescue Mysql::Error
-        puts "Can't insert row: #{$!.message}"
+        puts "Mysql error: #{$!.message}"
+        require 'pp'
+        pp $!
+        exit 1
       rescue Exception
         require 'pp'
         pp $!
