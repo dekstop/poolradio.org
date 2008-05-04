@@ -2,7 +2,7 @@
 function build_station_html($row) {
 	$html = '<div class="header"><a href="' . htmlspecialchars($row['radiourl']) . '" class="radiourl">' .
 		htmlspecialchars($row['title'] ? $row['title'] : $row['radiourl']) . '</a></div> ' .
-		'<div class="body"><span class="message"><a href=' . htmlspecialchars($row['link']) . '">' . htmlspecialchars($row['message']) . '</a></span>' . 
+		'<div class="body"><span class="message"><a href="' . htmlspecialchars($row['link']) . '">' . htmlspecialchars($row['message']) . '</a></span>' . 
 		' by <a href="http://last.fm/user/' . htmlspecialchars($row['username']) . '">' .
 		htmlspecialchars($row['username']) . '</a> ' .
 		'</div> ' .
