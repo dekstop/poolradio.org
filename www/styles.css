@@ -70,47 +70,46 @@ hr {
 /* = main = */
 /* ======== */
 
-#main .left {
+.left {
   width: 500px;
   padding-right: 50px;
 }
 
-#main .left .footer .date {
+.left .footer .date {
   display: none;
 }
-#main .left .footer .source {
+.left .footer .source {
   display: none;
 }
 
 
-#main .right {
+.right {
   width: 300px;
 }
 
-#main .right .stations {
+.right .stations {
   font-size:0.7em;
 }
 
-#main .right .header {
+.right .header {
   display: inline;
 }
-#main .right .body {
+.right .body {
   display: inline;
 }
-#main .right .footer {
+.right .footer {
   display: inline;
 }
-#main .right .context {
+.right .context {
   display: none;
 }
-#main .right .footer .source {
+.right .footer .date {
+  display: none;
+}
+.right .footer .source {
   display: none;
 }
 
-
-div.sources {
-  margin-top: 2em;
-}
 
 ul.stations {
   list-style: none;
@@ -118,18 +117,11 @@ ul.stations {
   padding-left: 0;
   text-indent: 0;
 }
-ul.stations li {
+.left ul.stations li {
   margin-bottom: 1em;
 }
-
-ul.sources {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  text-indent: 0;
-}
-ul.sources li {
-  margin-bottom: 0.5em;
+.right ul.stations li {
+  margin-bottom: 0.3em;
 }
 
 
@@ -212,12 +204,23 @@ p.about .credits a {
 /* =========== */
 
 div.sources {
+  margin-top: 1.5em;
   color: #cccccc;  
 }
 div.sources a {
   color: #cccccc;  
 }
 
+
+ul.sources {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+ul.sources li {
+  margin-bottom: 0.5em;
+}
 
 ul.sources li {
   font-size: 0.5em;
