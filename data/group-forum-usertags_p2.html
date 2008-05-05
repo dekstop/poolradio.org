@@ -1,0 +1,1591 @@
+
+    
+    <!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://purl.org/uF/2008/03/">
+      <title>Themed tag radio stations – Subscribers and their tag radio stations’s Discussions
+  &ndash; Groups at Last.fm</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="http://static.last.fm/opensearch_desc.xml" title="Last.fm" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="The Subscribers and their tag radio stations group has 128 members at Last.fm. Top artists include Portishead, David Bowie and The Beatles. This group is to bring together subscribers who have taken the time to tag and share the music they like. …"/>
+<meta http-equiv="content-language" content="en" />
+<link rel="shortcut icon" href="http://cdn.last.fm/matt/favicon.ico" />
+<link rel="icon" href="http://cdn.last.fm/matt/favicon.ico" />
+<link rel="icon" type="image/png" href="http://cdn.last.fm/matt/nice_favicon.png" />
+<link rel="apple-touch-icon" href="http://cdn.last.fm/depth/apple-touch-icon.png" />
+
+
+
+    
+        <link rel="stylesheet" type="text/css" media="all" href="http://cdn.last.fm/css/release-20080123/75028/main.css" charset="utf-8" />
+                        <!--[if IE 6]>
+            <link rel="stylesheet" type="text/css" media="screen" href="http://cdn.last.fm/css/release-20080123/75028/ie/ie6.css" charset="utf-8" />
+        <![endif]-->
+                            
+        
+        
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/../../lib/prototype.1.5.1.1.c2/compressed/prototype.js"></script>
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/../../lib/scriptaculous.1.7.c1/compressed/scriptaculous.js"></script>
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/../../lib/fastinit_compressed.js"></script>
+
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/LFM.js"></script>
+    
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/flashpreview.js"></script>
+
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/main.js"></script>
+
+                        <script type="text/javascript" language="javascript">
+<!--
+    var pUrl = '/user/martind/playlist/';
+    var pars = 'action=addtrack&ajax=1&trackid=';  
+    var addClicked = false;
+    var addClickedArray = new Array();
+    
+    function addToPlaylist(trackid) {
+        if (addClicked) {
+            var sidebarClick = false;
+            addClickedArray[trackid] = addClicked;
+            addClicked = false;
+        } else {
+            var sidebarClick = true;
+        }
+        if (sidebarClick) {
+            Element.addClassName('playlist_w', 'on');
+            $('playlist_msg').style.backgroundImage = 'url("http://static.last.fm/depth/global/progress.gif")';
+            new Effect.BlindDown('playlist_msg', {duration:0.25});
+        } else {
+            Element.addClassName(addClickedArray[trackid], 'playlistAddProgress');
+            addClickedArray[trackid].style.visibility = 'visible';
+        }
+        var myAjax = new Ajax.Request(
+        pUrl, 
+        {
+            method: 'post', 
+            parameters: pars+trackid, 
+            onComplete: function (r) {
+                if (sidebarClick) {
+                     if (r.responseText == 'SUCCESS') 
+                         $('playlist_msg').innerHTML = "Done.<br /> <a href=\""+pUrl+"\" class=\"lfmlight\">Go to my playlist…</a>";
+                     else 
+                         $('playlist_msg').innerHTML = "Sorry, please try again later.";             
+                    Element.removeClassName('playlist_w', 'on');
+                    $('playlist_msg').style.backgroundImage = '';
+                }
+                else {
+                    if (r.responseText == 'SUCCESS') {
+                        Element.removeClassName(addClickedArray[trackid], 'playlistAddProgress');
+                        Element.addClassName(addClickedArray[trackid], 'playlistAdded');
+                        addClickedArray[trackid].onclick = function() { return true; };
+                        addClickedArray[trackid].href = pUrl;
+                        addClickedArray[trackid].title = "Go to my playlist…";
+                    }
+                    else {
+                        addClickedArray[trackid].style.visibility = 'hidden';
+                        window.location = addClickedArray[trackid].getAttribute('href');
+                    }        
+                }
+            }
+        });
+        return false;
+    }
+   
+-->
+</script>
+        <script type="text/javascript">
+            
+            if(!window.onFlashPlayerLoad) {
+                function onFlashPlayerLoad() {}
+            }
+            
+        </script>
+        <!--[if IE 6]>
+            <script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/ie6.js"></script>
+        <![endif]-->
+    
+        <script type="text/javascript">
+        
+            LFM.set("config", { DEVELOPMENT_SERVER: true });
+        
+        </script>
+    
+    
+
+<script type="text/javascript">
+    LFM.set("String", {
+        okText: "OK",
+        cancelText: "cancel",
+        clickToEditText: "Click to edit",
+        savingText: "Saving…",
+        loadingText: "Loading…",
+        deletingText: "Deleting…",
+        thereWasAnError: "There was an error.",
+        fileTooBig: "Sorry, the file is too big.",
+        noFile: "Please choose a file."
+    });
+</script>
+
+</head>    <body id="LastBody" class="black">
+        <div style="position: absolute; top: -40px; left: 0;">
+                <script type="text/javascript">function writeTop(){};function writeTopRight(){};function writeTopTopRight(){};function writeTopTopTopRight(){};function writeMid(){};function writeTopLeaderboard(){};function writeFooterLeft(){};function writeFooterRight(){};;var aZoneCreativeTypeAssoc=[];</script> 
+        </div>
+
+    
+    
+        <div id="LastWebsite">
+
+    <div id="LastHeader">
+        <div id="HeaderMenu">
+    
+            <a href="/" title="Last.fm Homepage" id="LastLogo"><img id="LogoImg" src="http://cdn.last.fm/depth/header2/black_logo.jpg" width="207" height="42" alt="Last.fm Logo" /></a>
+    
+            <ul id="navigation">
+                <li id="navMusic"><a href="/music/" accesskey="m">Music</a></li>
+                <li id="navUsers"><a href="/users/" accesskey="u">Users</a></li>
+                <li id="navListen"><a href="/listen/" accesskey="l">Listen</a></li>                <li id="navEvents"><a href="/events/" accesskey="e">Events</a></li>
+                                            </ul>
+    
+            <div id="idBadge">
+  <a id="profileImage" href="/user/martind/"><img src="http://userserve-ak.last.fm/serve/50/4970191.jpg" /></a>
+  Logged in as <a href="/user/martind/" title="View your Profile Page">martind</a><br />
+    <a href="http://musicmanager.last.fm/" title="Music Manager">Music Manager</a> | <a href="/dashboard/" title="View your Recommendation Dashboard">Dashboard</a>
+</div> 
+
+        </div>
+   
+        <div id="headerBottom">
+                            <div id="headerSearchbox">
+                    <form method="get" action="/music/">
+                        <input class="sbox hint" id="searchInput" type="search" autosave="com.lastfm.searchhistory" results="5" name="q" value=" Music Search" />
+                        <script type="text/javascript">
+                            var hinter = new LFM.Form.hint({
+                                input: 'searchInput'
+                            });
+                        </script>
+                    </form>
+                </div>
+                
+                            <script type="text/javascript" language="javascript">
+                    var toRedStr = "Simply Red";
+                    var toBlackStr = "Paint it Black";
+                </script>
+                <ul>
+                                            <li id="uploadmusic"><a href="http://musicmanager.last.fm/">Upload music and videos</a></li>
+                                                                                        <li id="toglink"><a href="#" title="Switch Colour Style" onclick="return colourToggle(this, toRedStr, toBlackStr);this.innerHTML==toRedStr ? this.innerHTML=toBlackStr : this.innerHTML=toRedStr; return false"></a></li>
+                                        <li><a href="/inbox/" accesskey="i">Inbox (0)</a></li>
+                    <li><a href="/settings/" accesskey="p">Settings</a></li>
+                    <li><a href="/help/" accesskey="h">Help</a></li>
+                    <li><a href="/login/logout">Logout</a></li>
+                                            <li class="last" id="languageToggle">                    <a href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?change=language" title="Click here to change your language" rel="nofollow">English</a></li>
+                                    </ul>
+    
+                <script type="text/javascript" language="javascript">
+                    $('toglink').getElementsByTagName("A")[0].innerHTML = toRedStr;
+                </script>
+              
+        </div> 
+    </div>
+
+<script type="text/javascript" language="javascript"> 
+    var omniturePageType="groups";
+    var dartORD = Math.round(Math.random()*100000000);
+</script>
+
+<!-- SiteCatalyst code version: H.10.
+Copyright 1997-2007 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+<script language="JavaScript" src="http://cdn.last.fm/omniture/5/omniture-core.js"></script>
+<script language="JavaScript"><!--
+//<![CDATA[
+
+
+    /* Plugin Config */
+    s.usePlugins=true;
+    function s_doPlugins(s) {
+           /* Add calls to plugins here */
+           /* Example: s.campaign = s.getQueryParam('cid'); */
+        if(!s.campaign) {
+            s.campaign = s.getQueryParam('source');
+        }
+    }
+
+	/* 	  	  	 
+  	* Plugin: getTimeParting 1.1 - Set timeparting values based on time zone 	
+  	*/ 	  	
+  	s.getTimeParting=function(t,z,y){
+  	cd=new Date();utc=cd.getTime()+(cd.getTimezoneOffset()*60000); 	  	  	 
+  	tz=new Date(utc + (3600000*z));thisy=tz.getFullYear(); 	  	  	 
+  	var days=['Sunday','Monday','Tuesday','Wednesday','Thursday', 	  	  	 
+  	'Friday','Saturday'];if(thisy!=y){return'Data Not Available'}else{; 	  	  	 
+  	thish=tz.getHours();thismin=tz.getMinutes();thisd=tz.getDay(); 	  	  	 
+  	var dow=days[thisd];var ap='AM';var dt='Weekday';var mint='00'; 	  	  	 
+  	if(thismin>30){mint='30'};if(thish>=12){ap='PM';thish=thish-12}; 	  	  	 
+  	if (thish==0){thish=12};if(thisd==6||thisd==0){dt='Weekend'}; 	  	  	 
+  	var timestring=thish+':'+mint+ap;var daystring = dow; 	  	  	 
+  	var endstring=dt;if(t=='h'){return timestring}if(t=='d'){return daystring}; 	  	  	 
+  	if(t=='w'){return endstring}}} 	  	  	 
+  	  	  	  	 
+  	  	  	  	 
+  	/* 	  	  	 
+  	* Plugin: Days since last Visit 1.0.H - capture time from last visit 	  	  	 
+  	*/ 	  	  	 
+  	s.getDaysSinceLastVisit=function(){
+  	var s=this,e=new Date(),cval,ct=e.getTime(),c='s_lastvisit',day=24* 	  	  	 
+  	60*60*1000;e.setTime(ct+3*365*day);cval=s.c_r(c);if(!cval){s.c_w(c, 	  	  	 
+  	ct,e);return 'First page view or cookies not supported';}else{var d 	  	  	 
+  	=ct-cval;if(d>30*60*1000){if(d>30*day){s.c_w(c,ct,e);return 'More than 30 days';}if(d<30*day+1 && d>7*day){s.c_w(c,ct,e);return 'More than 7 days';}if(d<7*day+1 && d>day){s.c_w(c,ct,e);return 'Less than 7 days';}if(d<day+1){s.c_w(c,ct,e);return 'Less than 1 day';}}else return '';}}
+  	  	  	  	 
+  	/* 	  	  	 
+  	* Plugin: getNewRepeat 1.0 - Return whether user is new or repeat 	  	  	 
+  	*/ 	  	  	 
+  	s.getNewRepeat=function() {  	 
+  	var s=this,e=new Date(),cval,ct=e.getTime(),y=e.getYear();e.setTime(ct+30*24*60*60*1000);cval=s.c_r('s_nr');if(cval.length==0){s.c_w('s_nr',ct,e);return 'New';}if(cval.length!=0&&ct-cval<30*60*1000){s.c_w('s_nr',ct,e);return 'New';}if(cval<1123916400001){e.setTime(cval+30*24*60*60*1000);s.c_w('s_nr',ct,e);return 'Repeat';}else return 'Repeat'};
+
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+
+if (typeof(omniturePageType) === typeof(undefined))
+    var omniturePageType = "other";
+s.pageName="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2";
+s.server="";
+s.channel="";
+s.pageType=omniturePageType;
+s.prop1="group";
+s.prop2="group";
+s.prop3="forum";
+s.prop4="";
+s.prop5="";
+s.prop10="lfm";
+s.prop18="";
+s.prop31="sub";
+s.prop34='No Channel';
+s.prop12="last.fm";
+
+
+var adserverDescriptor = '';	  	  	  	 
+for (var i in aZoneCreativeTypeAssoc) {
+    adserverDescriptor += 'lfm:'+i +':'+aZoneCreativeTypeAssoc[i]+';';
+}
+
+s.prop35=adserverDescriptor;
+s.prop36='1';
+/* E-commerce Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+  	//time parting rows 	  	  	 
+  	s.eVar28=s.getTimeParting('h','-5','2007'); //Set hour 	  	  	 
+  	s.prop18=s.getTimeParting('h','-5','2007'); 	  	  	 
+  	s.prop19=s.getTimeParting('d','-5','2007'); // Set day 	  	  	 
+  	s.eVar19=s.getTimeParting('d','-5','2007'); 	  	  	 
+  	  	  	  	 
+  	//Get new/repeat visitor 	  	  	 
+  	s.prop21=s.getNewRepeat(); 	  	  	 
+  	  	  	  	 
+  	//Days since last visit 	  	  	 
+  	s.prop22=s.getDaysSinceLastVisit(); 	  	  	 
+  	s.eVar22=s.getDaysSinceLastVisit();
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+
+var s_code=s.t();if(s_code)document.write(s_code)
+
+//]]>-->
+</script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C'
+)+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web
+Analytics"><img
+src="http://icelfm.112.2O7.net/b/ss/icelfm/1/H.10--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT
+REMOVE/-->
+<!-- End SiteCatalyst code version: H.10. -->
+
+
+<div id="LastHeadline">
+<h1 class="h1group">Subscribers and their tag radio stations</h1>
+</div>
+
+<div id="SecondaryNav">
+    <ul>
+        <li class="first"><a href="/group/Subscribers+and+their+tag+radio+stations">Overview</a></li>
+        <li class="current"><a href="/group/Subscribers+and+their+tag+radio+stations/forum">Discussions</a></li>
+        <li><a href="/group/Subscribers+and+their+tag+radio+stations/journal">Articles</a></li>
+        <li><a href="/group/Subscribers+and+their+tag+radio+stations/members">Members</a></li>
+        <li><a href="/group/Subscribers+and+their+tag+radio+stations/connections">Connections</a></li>
+        <li><a href="/group/Subscribers+and+their+tag+radio+stations/recommended">Recommendations</a></li>
+        <li class="last"><a href="/group/Subscribers+and+their+tag+radio+stations/charts">Charts</a></li>
+    </ul>
+</div><div id="LastContent" class="LastContent2 grouppage">
+  <div id="LastContent2" class="mainContent">
+        <!-- Adserving start -->
+                                                                                                            
+                                                                                                        <script type="text/javascript">
+                            document.write('<div id="LastAd_Top" class="LastAd"');
+                            document.write(' style="display:none;"');                            document.write('>');
+                            if(typeof writeTop == 'function') writeTop();
+                            document.write('<\/div>');
+                                                    </script>
+                                                <!-- Adserving end --> 
+
+<!-- preload widget loading img -->
+<img src="http://cdn.last.fm/depth/widgets/panel_widget_loading.gif" style="display:none;" alt="" />
+<div id="widgetHolder" style="display:none;">
+    <div id="widget" style="display: none;">
+            <input id="safariIsWank" type="hidden" value="" />
+            <div id="widgetLoading" class="clearit">
+               <h2><span>Loading…</span> <img src="http://cdn.last.fm/depth/global/progress.gif" width="16" height="20" alt="Loading..." style="float:right;" /></h2>
+           </div>
+        <iframe id="widgetFrame" name="widgetFrame" width="100%" height="100%" frameborder="0" allowtransparency="true" src="" style="display: none;background-color: transparent;" scrolling="no"></iframe>
+    </div>
+</div>
+    <div id="breadcrumb"><a href="/group/Subscribers+and+their+tag+radio+stations/forum/59223">Subscribers and their tag radio stations’s Discussions</a> &gt; <a href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546" class="current">Themed tag radio stations</a></div>
+
+        
+<div class="forumview threadview">
+
+<script type="text/javascript">
+
+// <![CDATA[
+function quote(id) {
+    var x = document.getElementById('message'+id);
+    var y = document.getElementById('title'+id);
+    var txt = x.value;
+    var tit = '';
+    if (y && y.firstChild) {
+        //must trim it.  there is space from the element
+        tit = y.firstChild.nodeValue.replace(/^\s+|\s+$/g, "");
+    }
+    var b = document.getElementById('message');
+    var c = document.getElementById('editorTitle');
+    if (b) {
+        //on last page, reply box is visible
+        b.value=txt;
+        if(tit != '') c.value = 'Re: ' + tit;
+        window.location.href = '#post';
+    }
+    else {
+        //not on last page, need to jump there
+        var replyform = document.getElementById('hiddenreply');
+        if(tit!='') replyform.childNodes[0].value = encodeURIComponent('Re:'+tit);
+        replyform.childNodes[1].value = encodeURIComponent(txt);
+        replyform.submit();
+    }
+}
+// ]]>
+
+</script>
+
+
+<div id="topbarForum">
+          <a class="action replyToThread" href="#post"><span>Reply</span></a>
+          <div class="pagination"><span class="pages">Page 2 of 2</span><a href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/1" class="prevlink"><span>Prev</span></a><a href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/1">1</a>&nbsp;<span class="selected">2</span>&nbsp;<br style="clear:right;" /></div>
+    <a class="mozillasucks">&nbsp;</a>
+</div>
+
+
+<ul class="thecomments">
+            
+                <li class="comment alt" id="f4361407">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/andymantell/" title="" class=" ">andymantell</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/andymantell/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/2363704.gif" alt="andymantell’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      25 Jul 2007, 14:28
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    <a href="lastfm://usertags/andymantell/genius%20bassists" rel="nofollow"><img src="http://andymantell.co.uk/ExternalImages/play.gif" /></a><a href="http://www.last.fm/user/andymantell/tags/genius%20bassists">Genius Bassists</a><br />
+<br />
+A lot of funk in there, but I've put it in this themed thread instead of the funk thread because there's also some stuff that isn't...
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig"><a href="http://www.last.fm/user/andymantell/?chartstyle=YunjinKim2"><img src="http://imagegen.last.fm/YunjinKim2/recenttracks/andymantell.gif" /></a><br />
+<br />
+<strong>like <a href="http://www.last.fm/tag/downtempo" class="bbcode_tag" rel="tag">downtempo</a>? Then join <a href="http://www.last.fm/group/Downtempo" class="bbcode_group">Downtempo</a>!</strong><br />
+<div style="text-align:right"><a href="lastfm://play/tracks/75163749,33239045" rel="nofollow"><img src="http://www.andymantell.co.uk/ExternalImages/lastFMRadioLinks/AndyMantellsigVersion.gif" /></a></div></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message4361407">[quote][b][user]andymantell[/user][/b] said:
+[url=lastfm://usertags/andymantell/genius%20bassists][img]http://andymantell.co.uk/ExternalImages/play.gif[/img][/url][url=http://www.last.fm/user/andymantell/tags/genius%20bassists]Genius Bassists[/url]
+
+A lot of funk in there, but I've put it in this themed thread instead of the funk thread because there's also some stuff that isn't...[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/4361407">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=4361407" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(4361407); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment" id="f4453160">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/Quiplash/" title="" class=" ">Quiplash</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/Quiplash/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/742897.jpg" alt="Quiplash’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      6 Aug 2007, 17:51
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    tom-dissonance:  I *LOVE* your tagging :-) especially like the h5n1 tag, I certainly will use that one LOL<br />
+<br />
+IanAR's tag (which has become a pretty good global tag) <br />
+<a href="http://www.last.fm/tag/i%20am%20a%20party%20girl%20here%20is%20my%20soundtrack">i am a party girl here is my soundtrack</a>.... 'cuz girls just wanna have fun ;-)<br />
+<br />
+One tag I use is <a href="http://www.last.fm/user/Quiplash/tags/my%20500%20essential%20songs">my 500 essential songs</a>, which is kinda misleading because it's up to 630+ now.  My eclectic/bizarre musical taste, all in one tag.<br />
+<br />
+I have a few tags I would really like to turn into global tag radio stations:<br />
+<br />
+<a href="http://www.last.fm/user/Quiplash/tags/awful%20awful%20awful">awful awful awful</a>  Billy Don't Be A Hero, Lay Lady Lay, I've Never Been To Me, and other assorted dreck... there's already a good start at a global tag here: <a href="http://www.last.fm/tag/awful%20awful%20awful/tracks">awful awful awful</a>!<br />
+<br />
+<a href="http://www.last.fm/user/Quiplash/tags/songs%20about%20hookers">songs about hookers</a> I smell sex and candy, toot toot yea beep beep, Rooooooooooox-ane........<br />
+<br />
+<a href="http://www.last.fm/user/Quiplash/tags/songs%20about%20homelessness">songs about homelessness</a><br />
+<br />
+<a href="http://www.last.fm/user/Quiplash/tags/songs%20not%20to%20play%20at%20your%20wedding">songs not to play at your wedding</a> Elvis Presley - Suspicion, etc.<br />
+<br />
+<a href="http://www.last.fm/user/Quiplash/tags/songs%20about%20spontaneous%20human%20combustion">songs about spontaneous human combustion</a> - somehow I don't think we'll be able to create a tag radio station  for this one LOL<br />
+<br />
+<br />
+<br />
+ <br />
+<br />
+
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">--Quiplash (Ryan Schultz, Winnipeg, Manitoba, Canada).<br />
+<br />
+ <img src="http://www.denness.net/rpis/s/6/username/Quiplash/tz/CST/tza/-6" /></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message4453160">[quote][b][user]Quiplash[/user][/b] said:
+tom-dissonance:  I *LOVE* your tagging :-) especially like the h5n1 tag, I certainly will use that one LOL
+
+IanAR's tag (which has become a pretty good global tag) 
+[url=http://www.last.fm/tag/i%20am%20a%20party%20girl%20here%20is%20my%20soundtrack]i am a party girl here is my soundtrack[/url].... 'cuz girls just wanna have fun ;-)
+
+One tag I use is [url=http://www.last.fm/user/Quiplash/tags/my%20500%20essential%20songs]my 500 essential songs[/url], which is kinda misleading because it's up to 630+ now.  My eclectic/bizarre musical taste, all in one tag.
+
+I have a few tags I would really like to turn into global tag radio stations:
+
+[url=http://www.last.fm/user/Quiplash/tags/awful%20awful%20awful]awful awful awful[/url]  Billy Don't Be A Hero, Lay Lady Lay, I've Never Been To Me, and other assorted dreck... there's already a good start at a global tag here: [url=http://www.last.fm/tag/awful%20awful%20awful/tracks]awful awful awful[/url]!
+
+[url=http://www.last.fm/user/Quiplash/tags/songs%20about%20hookers]songs about hookers[/url] I smell sex and candy, toot toot yea beep beep, Rooooooooooox-ane........
+
+[url=http://www.last.fm/user/Quiplash/tags/songs%20about%20homelessness]songs about homelessness[/url]
+
+[url=http://www.last.fm/user/Quiplash/tags/songs%20not%20to%20play%20at%20your%20wedding]songs not to play at your wedding[/url] Elvis Presley - Suspicion, etc.
+
+[url=http://www.last.fm/user/Quiplash/tags/songs%20about%20spontaneous%20human%20combustion]songs about spontaneous human combustion[/url] - somehow I don't think we'll be able to create a tag radio station  for this one LOL
+
+
+
+ 
+
+[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/4453160">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=4453160" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(4453160); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment alt" id="f4469392">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/tom_dissonance/" title="" class=" ">tom_dissonance</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/tom_dissonance/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3512671.jpg" alt="tom_dissonance’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      8 Aug 2007, 16:55
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    hey thanks <span class="subscriberIcon"><a href="http://www.last.fm/user/Quiplash/" class="bbcode_user">Quiplash</a></span>! i am addicted to ridiculous and idiosyncratic tagging but i love the stations. good to know someone else got a kick out it.<br />
+<br />
+oh, i tagged a couple of things &quot;songs about hookers&quot; and &quot;songs about homelessness&quot; off the top of the brain, as well. although &quot;songs about spontaneous human combustion&quot; is a bit of a niche tag, yes ;-)<br />
+<br />
+anyway, another thing i just wanted to do while i'm here is big up <span class="subscriberIcon"><a href="http://www.last.fm/user/dianashamilton/" class="bbcode_user">dianashamilton</a></span>'s amazing &quot;<a href="http://www.last.fm/tag/golden%20arrows" class="bbcode_tag" rel="tag">golden arrows</a>&quot; for tracks/albums that are full-length preview-style streamable. i've been trynna boost it up by adding free stuff when i come across it and it's already a wildly eclectic and v. enjoyable listen. go go go!
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig"><strong><a href="http://www.last.fm/group/UK+Hip+Hop">UK Hip Hop</a></strong> —o— <strong><a href="http://www.last.fm/group/unreal+avatar">Unreal Avatar</a></strong>: <em>because this isn't some tarts-and-vicars party, you know</em> —o— <strong><a href="http://www.last.fm/group/Chester+UK">Che-town</a></strong>: <em>because <strong>someone</strong>'s gotta be from there</em> —o— <strong><a href="http://www.last.fm/group/MetalAd+is+useless+and+conceited" class="bbcode_group">MetalAd is useless and conceited</a></strong></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message4469392">[quote][b][user]tom_dissonance[/user][/b] said:
+hey thanks [user]quiplash[/user]! i am addicted to ridiculous and idiosyncratic tagging but i love the stations. good to know someone else got a kick out it.
+
+oh, i tagged a couple of things "songs about hookers" and "songs about homelessness" off the top of the brain, as well. although "songs about spontaneous human combustion" is a bit of a niche tag, yes ;-)
+
+anyway, another thing i just wanted to do while i'm here is big up [user]dianashamilton[/user]'s amazing "[tag]golden arrows[/tag]" for tracks/albums that are full-length preview-style streamable. i've been trynna boost it up by adding free stuff when i come across it and it's already a wildly eclectic and v. enjoyable listen. go go go![/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/4469392">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=4469392" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(4469392); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment" id="f4512385">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/toasterhead2k/" title="" class=" ">toasterhead2k</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/toasterhead2k/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/1030676.gif" alt="toasterhead2k’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      13 Aug 2007, 21:37
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    <h4 id="title4512385">
+    I clearly have the best tags ever
+  </h4>
+    
+  <div class="messageContent">
+    <a href="http://www.last.fm/tag/omg%20i%20fought%20dis%20film%20was%20wiked%20mann%20lol" class="bbcode_tag" rel="tag">omg i fought dis film was wiked mann lol</a> - Songs, artists, and albums that are just way fly, primarily from 90's indie, New Wierd America, and Malian griot music.<br />
+<br />
+<a href="http://www.last.fm/tag/cornsilk%20futurism" class="bbcode_tag" rel="tag">cornsilk futurism</a> - Similar to <a href="http://www.last.fm/tag/omg%20i%20fought%20dis%20film%20was%20wiked%20mann%20lol" class="bbcode_tag" rel="tag">omg i fought dis film was wiked mann lol</a> but different somehow.<br />
+<br />
+<a href="http://www.last.fm/tag/only%20like%20the%20greatest%20freaking%20song%20ever%20made%20in%20perpetuity%20throughout%20the%20universe" class="bbcode_tag" rel="tag">only like the greatest freaking song ever made in perpetuity throughout the universe</a> - Tracks that have transcended mere goodness and are without a doubt the greatest freaking songs ever.  <br />
+<br />
+<a href="http://www.last.fm/tag/wherein%20i%20compile%20a%20comprehensive%20list%20of%20songs%20about%20zombies" class="bbcode_tag" rel="tag">wherein i compile a comprehensive list of songs about zombies</a> - songs that mention zombies or zombie-related activities.<br />
+<br />
+<a href="http://www.last.fm/tag/a%20school%20bus%20with%20gothic%20arched%20windows" class="bbcode_tag" rel="tag">a school bus with gothic arched windows</a> - old school, dogg.  Old school!<br />
+<br />
+<a href="http://www.last.fm/tag/butt%20stacker" class="bbcode_tag" rel="tag">butt stacker</a> - music to stack butts to.  <br />
+
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">For good music such that a man or woman would listen to whilst enjoying the listeningship of music please try <a href="http://www.last.fm/user/toasterhead2k/tags/omg%20i%20fought%20dis%20film%20was%20wiked%20mann%20lol">omg i fought dis film was wiked mann lol radio</a></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message4512385">[quote][b][user]toasterhead2k[/user][/b] said:
+[tag]omg i fought dis film was wiked mann lol[/tag] - Songs, artists, and albums that are just way fly, primarily from 90's indie, New Wierd America, and Malian griot music.
+
+[tag]cornsilk futurism[/tag] - Similar to [tag]omg i fought dis film was wiked mann lol[/tag] but different somehow.
+
+[tag]only like the greatest freaking song ever made in perpetuity throughout the universe[/tag] - Tracks that have transcended mere goodness and are without a doubt the greatest freaking songs ever.  
+
+[tag]wherein i compile a comprehensive list of songs about zombies[/tag] - songs that mention zombies or zombie-related activities.
+
+[tag]a school bus with gothic arched windows[/tag] - old school, dogg.  Old school!
+
+[tag]butt stacker[/tag] - music to stack butts to.  
+[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/4512385">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=4512385" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(4512385); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment alt" id="f4513182">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/dianashamilton/" title="" class=" ">dianashamilton</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/dianashamilton/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3629498.jpg" alt="dianashamilton’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      13 Aug 2007, 23:16
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    Not sure if this is a &quot;theme&quot;, but I'm dividing <a href="http://www.last.fm/music/Various+Artists" class="bbcode_artist">Various Artists</a> albums of potential interest into 3 tags so far: <a href="http://www.last.fm/user/dianashamilton/tags/va%20silvermine">va silvermine</a> (general), <a href="http://www.last.fm/user/dianashamilton/tags/recognize%20this%20lovely%20melody">recognize this lovely melody</a> (popular classical), <a href="http://www.last.fm/user/dianashamilton/tags/vopera">vopera</a> (operatic).<br />
+<br />
+A lot more great stuff is in Adrian's <a href="http://www.last.fm/user/AdriaNnLA/tags/various%20artists%20are%20a%20pita%20on%20lastfm">various artists are a pita on lastfm</a>.
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig"><a href="http://archive.org/details/etree" rel="nofollow">LMA</a> -- <a href="http://archive.org/details/audio" rel="nofollow">IA Audio</a> -- <a href="http://bt.etree.org" rel="nofollow">bt.etree.org</a> -- <a href="http://www.last.fm/group/Golden+Arrows">Golden Arrows</a> -- <a href="http://www.last.fm/group/Spy+Music" class="bbcode_group">Spy Music</a> -- <a href="http://www.last.fm/group/Fred+Astaire">Fred Astaire</a>  -- <a href="http://www.last.fm/group/Surf+Punk">Surf Punk</a></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message4513182">[quote][b][user]dianashamilton[/user][/b] said:
+Not sure if this is a "theme", but I'm dividing [artist]Various Artists[/artist] albums of potential interest into 3 tags so far: [url=http://www.last.fm/user/dianashamilton/tags/va%20silvermine]va silvermine[/url] (general), [url=http://www.last.fm/user/dianashamilton/tags/recognize%20this%20lovely%20melody]recognize this lovely melody[/url] (popular classical), [url=http://www.last.fm/user/dianashamilton/tags/vopera]vopera[/url] (operatic).
+
+A lot more great stuff is in Adrian's [url=http://www.last.fm/user/AdriaNnLA/tags/various%20artists%20are%20a%20pita%20on%20lastfm]various artists are a pita on lastfm[/url].[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/4513182">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=4513182" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(4513182); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment" id="f5390525">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/mathman_mr_t/" title="" class=" ">mathman_mr_t</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/mathman_mr_t/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3527994.jpg" alt="mathman_mr_t’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      13 Dec 2007, 03:49
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    one of my stations i listen to a lot is one i call ab-ex minimalism.  if you like noise and assorted weirdness you might try it out. <a href="http://www.last.fm/listen/usertags/mathman_mr_t/ab-ex%20minimalism">ab-ex minimalism</a>
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">onward through the fog</div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message5390525">[quote][b][user]mathman_mr_t[/user][/b] said:
+one of my stations i listen to a lot is one i call ab-ex minimalism.  if you like noise and assorted weirdness you might try it out. [url=http://www.last.fm/listen/usertags/mathman_mr_t/ab-ex%20minimalism]ab-ex minimalism[/url][/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/5390525">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=5390525" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(5390525); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment alt" id="f5532723">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/raw_u/" title="" class=" ">raw_u</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/raw_u/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/5515747.jpg" alt="raw_u’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      5 Jan 2008, 12:13
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    Best general tag I've seen in ages is <a href="http://www.last.fm/tag/quittenlikoer" class="bbcode_tag" rel="tag">quittenlikoer</a> I have no idea who made it nor what was the general idea, but there clearly was one, because this makes great, wholesome listening experience. 
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <!--SIG-->
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message5532723">[quote][b][user]raw_u[/user][/b] said:
+Best general tag I've seen in ages is [tag]quittenlikoer[/tag] I have no idea who made it nor what was the general idea, but there clearly was one, because this makes great, wholesome listening experience. [/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/5532723">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=5532723" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(5532723); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment" id="f5680561">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/mathman_mr_t/" title="" class=" ">mathman_mr_t</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/mathman_mr_t/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3527994.jpg" alt="mathman_mr_t’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      27 Jan 2008, 21:05
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    i am four-fifths of the way through my biggest tag station project so far.  it's called <a href="http://www.last.fm/listen/usertags/mathman_mr_t/mmt%20rs%20500">mmt rs 500</a> and it represents the <em>rolling stone</em> magazine list of the 500 greatest albums of all time.  <br />
+<br />
+some of the albums aren't available on last and others have had to be entered as individual tracks to avoid strange extraneous stuff.  even with the care i've taken some of the weirdness still shows up like those interviews with quincy jones that seem to be associated with every michael jackson album listed on the site.  <br />
+<br />
+anyway, give it a listen if you like.  i'm hoping to get the last 100 albums on the station within the next couple of weeks.
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">onward through the fog</div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message5680561">[quote][b][user]mathman_mr_t[/user][/b] said:
+i am four-fifths of the way through my biggest tag station project so far.  it's called [url=http://www.last.fm/listen/usertags/mathman_mr_t/mmt%20rs%20500]mmt rs 500[/url] and it represents the [i]rolling stone[/i] magazine list of the 500 greatest albums of all time.  
+
+some of the albums aren't available on last and others have had to be entered as individual tracks to avoid strange extraneous stuff.  even with the care i've taken some of the weirdness still shows up like those interviews with quincy jones that seem to be associated with every michael jackson album listed on the site.  
+
+anyway, give it a listen if you like.  i'm hoping to get the last 100 albums on the station within the next couple of weeks.[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/5680561">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=5680561" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(5680561); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment alt" id="f5684622">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/tom_dissonance/" title="" class=" ">tom_dissonance</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/tom_dissonance/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3512671.jpg" alt="tom_dissonance’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      28 Jan 2008, 12:31
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    <span class="quote"><strong><span class="subscriberIcon"><a href="http://www.last.fm/user/mathman_mr_t/" class="bbcode_user">mathman_mr_t</a></span></strong> said:<br />
+i am four-fifths of the way through my biggest tag station project so far.  it's called <a href="http://www.last.fm/listen/usertags/mathman_mr_t/mmt%20rs%20500">mmt rs 500</a> and it represents the <em>rolling stone</em> magazine list of the 500 greatest albums of all time.  <br />
+<br />
+some of the albums aren't available on last and others have had to be entered as individual tracks to avoid strange extraneous stuff.  even with the care i've taken some of the weirdness still shows up like those interviews with quincy jones that seem to be associated with every michael jackson album listed on the site.  <br />
+<br />
+anyway, give it a listen if you like.  i'm hoping to get the last 100 albums on the station within the next couple of weeks.</span><br />
+<br />
+that is literally awesome. thank-you.
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig"><strong><a href="http://www.last.fm/group/UK+Hip+Hop">UK Hip Hop</a></strong> —o— <strong><a href="http://www.last.fm/group/unreal+avatar">Unreal Avatar</a></strong>: <em>because this isn't some tarts-and-vicars party, you know</em> —o— <strong><a href="http://www.last.fm/group/Chester+UK">Che-town</a></strong>: <em>because <strong>someone</strong>'s gotta be from there</em> —o— <strong><a href="http://www.last.fm/group/MetalAd+is+useless+and+conceited" class="bbcode_group">MetalAd is useless and conceited</a></strong></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message5684622">[quote][b][user]tom_dissonance[/user][/b] said:
+[quote][b][user]mathman_mr_t[/user][/b] said:
+i am four-fifths of the way through my biggest tag station project so far.  it's called [url=http://www.last.fm/listen/usertags/mathman_mr_t/mmt%20rs%20500]mmt rs 500[/url] and it represents the [i]rolling stone[/i] magazine list of the 500 greatest albums of all time.  
+
+some of the albums aren't available on last and others have had to be entered as individual tracks to avoid strange extraneous stuff.  even with the care i've taken some of the weirdness still shows up like those interviews with quincy jones that seem to be associated with every michael jackson album listed on the site.  
+
+anyway, give it a listen if you like.  i'm hoping to get the last 100 albums on the station within the next couple of weeks.[/quote]
+
+that is literally awesome. thank-you.[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/5684622">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=5684622" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(5684622); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment" id="f5723949">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/mathman_mr_t/" title="" class=" ">mathman_mr_t</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/mathman_mr_t/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/3527994.jpg" alt="mathman_mr_t’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      3 Feb 2008, 01:33
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    my tag station representing the rolling stone magazine list of the 500 greatest albums of all time is done.  yes, there are holes in the track lists because of the vagaries of the last database, but even where the songs or albums aren't streamable, i've still got them tagged so if the songs are ever added the station will play them.  when i started this project in december, i had no idea what i was getting myself into.<br />
+<br />
+enjoy
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">onward through the fog</div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message5723949">[quote][b][user]mathman_mr_t[/user][/b] said:
+my tag station representing the rolling stone magazine list of the 500 greatest albums of all time is done.  yes, there are holes in the track lists because of the vagaries of the last database, but even where the songs or albums aren't streamable, i've still got them tagged so if the songs are ever added the station will play them.  when i started this project in december, i had no idea what i was getting myself into.
+
+enjoy[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/5723949">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=5723949" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(5723949); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+                <li class="comment alt" id="f6075724">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/luvz2sp00ge/" title="" class=" ">luvz2sp00ge</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/luvz2sp00ge/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/5537767.jpg" alt="luvz2sp00ge’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      25 Mar 2008, 08:17
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    <h4 id="title6075724">
+    This is Incredible
+  </h4>
+    
+  <div class="messageContent">
+    I can't believe I didn't think of posting this. Kudos for the idea. Here we go...<br />
+<br />
+. <a href="http://www.last.fm/tag/rocket%20sauce" class="bbcode_tag" rel="tag">rocket sauce</a>: It's rocket sauce. Just ask Jables and Rage Kage. Any song that I like. It also happens to be my largest station.<br />
+<br />
+. <a href="http://www.last.fm/tag/sesame%20street" class="bbcode_tag" rel="tag">sesame street</a>: This station has anything good or bad to do with children and old classic greats such as <span class="inlineFlash"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="13" height="13" id="inlinePlayer" allowNetworking="internal"><param name="allowScriptAccess" value="sameDomain" /><param name="FlashVars" value="resourceID=1001730" /><param name="wmode" value="transparent"><param name="movie" value="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" quality="high" FlashVars="resourceID=1001730" bgcolor="#ffffff" width="13" height="13" name="inlinePlayer" allowNetworking="internal" wmode="transparent" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></span><a title="Dusty Springfield &ndash; Son of a Preacher Man" href="http://www.last.fm/music/Dusty+Springfield/_/Son+of+a+Preacher+Man" class="bbcode_track">Son of a Preacher Man</a>, <span class="inlineFlash"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="13" height="13" id="inlinePlayer" allowNetworking="internal"><param name="allowScriptAccess" value="sameDomain" /><param name="FlashVars" value="resourceID=12725" /><param name="wmode" value="transparent"><param name="movie" value="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" quality="high" FlashVars="resourceID=12725" bgcolor="#ffffff" width="13" height="13" name="inlinePlayer" allowNetworking="internal" wmode="transparent" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></span><a title="Led Zeppelin &ndash; Black Dog" href="http://www.last.fm/music/Led+Zeppelin/_/Black+Dog" class="bbcode_track">Black Dog</a>, and Sesames Treet. The name inspires retro in my mind and of course anything I like thats related to children are on here as well. You'll even find tracks like <span class="inlineFlash"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="13" height="13" id="inlinePlayer" allowNetworking="internal"><param name="allowScriptAccess" value="sameDomain" /><param name="FlashVars" value="resourceID=7191007" /><param name="wmode" value="transparent"><param name="movie" value="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" quality="high" FlashVars="resourceID=7191007" bgcolor="#ffffff" width="13" height="13" name="inlinePlayer" allowNetworking="internal" wmode="transparent" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></span><a title="Wolfmother &ndash; White Unicorn" href="http://www.last.fm/music/Wolfmother/_/White+Unicorn" class="bbcode_track">White Unicorn</a> on there simply because <a href="http://www.last.fm/music/Wolfmother" class="bbcode_artist">Wolfmother</a> sounds retro.<br />
+<br />
+. <a href="http://www.last.fm/tag/daterape" class="bbcode_tag" rel="tag">daterape</a>: Now this one I've been dying for a chance to explain. This one has anything to do with sex, rape, daterape, love, relationships, or <span class="inlineFlash"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="13" height="13" id="inlinePlayer" allowNetworking="internal"><param name="allowScriptAccess" value="sameDomain" /><param name="FlashVars" value="resourceID=1004612" /><param name="wmode" value="transparent"><param name="movie" value="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" quality="high" FlashVars="resourceID=1004612" bgcolor="#ffffff" width="13" height="13" name="inlinePlayer" allowNetworking="internal" wmode="transparent" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></span><a title="Tool &ndash; Prison Sex" href="http://www.last.fm/music/Tool/_/Prison+Sex" class="bbcode_track">Prison Sex</a>. You will find of course <span class="inlineFlash"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="13" height="13" id="inlinePlayer" allowNetworking="internal"><param name="allowScriptAccess" value="sameDomain" /><param name="FlashVars" value="resourceID=12300" /><param name="wmode" value="transparent"><param name="movie" value="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://cdn.last.fm/webclient/inline/6/inlinePlayer.swf" quality="high" FlashVars="resourceID=12300" bgcolor="#ffffff" width="13" height="13" name="inlinePlayer" allowNetworking="internal" wmode="transparent" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></span><a title="Sublime &ndash; Date Rape" href="http://www.last.fm/music/Sublime/_/Date+Rape" class="bbcode_track">Date Rape</a>(the inspirational track), <a href="http://www.last.fm/music/The+Hold+Steady" class="bbcode_artist">The Hold Steady</a>, <a href="http://www.last.fm/music/Queens+of+the+Stone+Age" class="bbcode_artist">Queens of the Stone Age</a>, <a href="http://www.last.fm/music/A+Perfect+Circle" class="bbcode_artist">A Perfect Circle</a>, anything that I think has anything to do with the aforementioned.<br />
+<br />
+. <a href="http://www.last.fm/tag/intoxicated" class="bbcode_tag" rel="tag">intoxicated</a>: Inspired by <a href="http://www.last.fm/music/Billy+Corgan" class="bbcode_artist">Billy Corgan</a>, this has anything to do with drugs and/or alcahol. We also  like to include songs by artists that we KNOW are/were on drugs. Guys like <a href="http://www.last.fm/music/Jimi+Hendrix" class="bbcode_artist">Jimi Hendrix</a> and <a href="http://www.last.fm/music/Scott+Weiland" class="bbcode_artist">Scott Weiland</a>.<br />
+<br />
+. <a href="http://www.last.fm/tag/worst%20band%20ever" class="bbcode_tag" rel="tag">worst band ever</a>: This tag is dedicated to and inspired by <a href="http://www.last.fm/music/Limp+Bizkit" class="bbcode_artist">Limp Bizkit</a>. But <a href="http://www.last.fm/music/Metallica" class="bbcode_artist">Metallica</a> also qualifies. As far as I know, those are the only 2 bands in there. That is because both bands did indeed rock at some point and one would be lying to themself if they NO LONGER liked the good stuff they did. That is why you shouldn't find any <a href="http://www.last.fm/music/Linkin+Park" class="bbcode_artist">Linkin Park</a>, <a href="http://www.last.fm/music/Insane+Clown+Posse" class="bbcode_artist">Insane Clown Posse</a>, or <a href="http://www.last.fm/music/Evanescence" class="bbcode_artist">Evanescence</a> in there.<br />
+<br />
+These are not by any means complete, nor will they ever be. We're always working on them and improving them. We also have been known to remove a track on the occasion. Feel free to check out the rest of them at our profile page.
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <div class="messageSig">No parking violators will be towed.<br />
+<a href="http://www.last.fm/user/luvz2sp00ge/?chartstyle=sp00ge"> <img src="http://imagegen.last.fm/sp00ge/recenttracks/3/luvz2sp00ge.gif" /> </a></div>
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message6075724">[quote][b][user]luvz2sp00ge[/user][/b] said:
+I can't believe I didn't think of posting this. Kudos for the idea. Here we go...
+
+. [tag]Rocket Sauce[/tag]: It's rocket sauce. Just ask Jables and Rage Kage. Any song that I like. It also happens to be my largest station.
+
+. [tag]sesame street[/tag]: This station has anything good or bad to do with children and old classic greats such as [track artist=Dusty Springfield]Son of a Preacher Man[/track], [track artist=Led Zeppelin]Black Dog[/track], and Sesames Treet. The name inspires retro in my mind and of course anything I like thats related to children are on here as well. You'll even find tracks like [track artist=Wolfmother]White Unicorn[/track] on there simply because [artist]Wolfmother[/artist] sounds retro.
+
+. [tag]daterape[/tag]: Now this one I've been dying for a chance to explain. This one has anything to do with sex, rape, daterape, love, relationships, or [track artist=Tool]Prison Sex[/track]. You will find of course [track artist=Sublime]Date Rape[/track](the inspirational track), [artist]The Hold Steady[/artist], [artist]Queens of the Stone Age[/artist], [artist]A Perfect Circle[/artist], anything that I think has anything to do with the aforementioned.
+
+. [tag]intoxicated[/tag]: Inspired by [artist]Billy Corgan[/artist], this has anything to do with drugs and/or alcahol. We also  like to include songs by artists that we KNOW are/were on drugs. Guys like [artist]Jimi Hendrix[/artist] and [artist]Scott Weiland[/artist].
+
+. [tag]worst band ever[/tag]: This tag is dedicated to and inspired by [artist]Limp Bizkit[/artist]. But [artist]Metallica[/artist] also qualifies. As far as I know, those are the only 2 bands in there. That is because both bands did indeed rock at some point and one would be lying to themself if they NO LONGER liked the good stuff they did. That is why you shouldn't find any [artist]Linkin Park[/artist], [artist]Insane Clown Posse[/artist], or [artist]Evanescence[/artist] in there.
+
+These are not by any means complete, nor will they ever be. We're always working on them and improving them. We also have been known to remove a track on the occasion. Feel free to check out the rest of them at our profile page.[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/6075724">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=6075724" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(6075724); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+                
+    <a name="last"></a>            <li class="comment" id="f6146695">
+    
+    <ul class="commentUserDetails">
+    
+    <li class="userName">      <span class="subscriberIcon"><a href="/user/Chroniz/" title="" class=" ">Chroniz</a></span> <span>said...</span>
+    </li>
+  
+    <li class="userThumb">
+      <a href="/user/Chroniz/" class="avatar">
+        <img src="http://userserve-ak.last.fm/serve/50/5087819.png" alt="Chroniz’s Avatar" width="50"/>
+      </a>
+    </li>
+    
+    <li class="userDetails">
+      <!--TYPESTRING-->
+    </li>
+  
+    <li class="date">
+      4 Apr 2008, 12:22
+    </li>
+    
+  </ul>
+    
+  <div class="wrapper">
+  
+    
+  <div class="messageContent">
+    
+    <br style="clear: both;" />
+  </div><!-- .messageContent -->
+  
+  <!--SIG-->
+  
+  <div class="forumStuff">
+    <textarea style="width:1px;height:1px; display:none;" rows="1" cols="1" id="message6146695">[quote][b][user]Chroniz[/user][/b] said:
+[/quote]
+	</textarea>
+      </div>
+
+  <div class="forumLine"> 
+    <a class="permalinkbutton" href="/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/_/6146695">Permalink</a>&nbsp;
+	<a href="/forum/editmessage/?message=6146695" class="editbutton">Edit</a>&nbsp; 
+    <a href="#" class="quotebutton" onclick="quote(6146695); return false;">Quote</a>
+  </div>
+  
+   </div><!-- .wrapper -->
+  
+</li>
+    <a name="end"></a>
+</ul>
+
+    <div style="float:left">
+        <form name="modoptions" method="post" action="/forum/modifythread?id=298546" onsubmit="if(document.modoptions.action.value=='') return false;"><fieldset>
+        <select name="action">
+            <option value="">Moderator Options</option>
+                                                <option value="makesticky">Stick thread</option>
+                                                        <option value="move">Move thread to different forum</option>
+                                                            <option value="lock">Lock thread (no more replies)</option>
+                                                        <option value="delete">Delete thread and all 36 replies</option>
+                    </select>
+        <input type="submit" value="Do it" name="submit"/>
+        <input type="hidden" name="group" value="88804" />        <input type="hidden" name="baseurl" value="%2Fgroup%2FSubscribers%2Band%2Btheir%2Btag%2Bradio%2Bstations%2Fforum%2F59223%2F_%2F298546"/>
+        </fieldset></form>
+    </div>
+    <br clear="all" />
+
+                        <div class="reply" style="clear:both">
+                                                            <a name="post"></a>
+<div id="editor" >
+    <div id="editorPreviewContainer" style="display:none">
+    <label class="lfmlight" for="editorPreviewPane">Preview (your message isn't saved until you click Post below):</label>
+    <div id="editorPreviewPane" class="messageContent"></div>
+    </div>
+    <form action="/forum/replytothread/?threadid=298546&amp;baseurl=/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/0#last" method="post" name="postform" id="postform"><fieldset>
+        <div id="editorPanel">
+                <p style="margin-top:0;">
+            <label for="editorTitle" class="lfmlight">Title:</label><br /><input type="text" name="title" id="editorTitle" value="" /></p>
+         <label for="message" class="lfmlight">Post:
+                 <small style="color:#D01F3C;float:right;width:65%;text-align:right;" id="sorrymsg"></small>
+         </label><br />
+                <textarea id="message" name="message"></textarea><br />
+        <noscript>
+            <a href="/forum/markup" class="lfmlight" target="bbcode" style="text-align:right;float:right;display:inline;">
+                Formatting help
+            </a> 
+        </noscript>
+           
+                <div id="toolbar" style="display:none">
+            
+          <label class="lfmlight">
+            <a href="/forum/markup" target="bbcode" class="lfmlight" style="text-align:right;float:right;display:inline;">
+               Formatting help
+            </a>  
+            Insert:
+          </label>
+          <div id="bbbuttons">
+            <ul class="bbbuttons clearit">
+              <li id="bbartist" class="lfm" title="Link to an artist">
+                  <span>Artist</span></li>
+              <li id="bbalbum" class="lfm" title="Link to an album">
+                  <span>Album</span></li>
+              <li id="bbtrack" class="lfm" title="Link to a track">
+                  <span>Track</span></li>
+              <li id="bblabel" class="lfm" title="Link to a label">
+                  <span>Label</span></li>
+              <li id="bbtag" class="lfm" title="Link to a tag">
+                  <span>Tag</span></li>
+              <li id="bbevent" class="lfm" title="Link to an event">
+                  <span>Event</span></li>
+              <li id="bbvideo" class="lfm" title="Embed a video hosted on Last.fm">
+                  <span>Video</span></li>
+                </ul>
+                <ul class="bbbuttons" class="clearit">
+              <li id="bburl" title="Link to a webpage" class="break">
+                  <span>URL</span></li>
+              <li id="bbimg" title="Embed an Image">
+                  <span>Image</span></li>
+              <li id="bbyoutube" title="Embed a YouTube Video">
+                  <span>YouTube</span></li>
+              <li id="bbgooglevideo" title="Embed a Google Video">
+                  <span>Google Video</span></li>
+            </ul>
+            <ul class="bbbuttons" class="clearit">
+               <li id="bbquote" title="Quote text">
+                  <span>Quote</span></li>
+              <li id="bbb" title="Make text bold">
+                  <span>Bold Text</span></li>
+              <li id="bbi" title="Make text italic">
+                  <span>Italic Text</span></li>
+              <li id="bbu" title="Underline text">
+                 <span>Underline</span></li>
+           </ul>
+        </div><!-- #bbbuttobs -->
+        </div>
+        <script type="text/javascript" charset="utf-8">
+          Element.show('toolbar');
+        </script>
+                </div>
+                <br style="clear:both"/>
+        <div id="actionbuttons" style="margin-top:5px;">
+            <input type="submit" name="preview" id="editorPreview" style="display:none;margin-right:5px;" value="Preview" /><script type="text/javascript">
+                Element.show("editorPreview");
+            </script>            <input type="submit" name="submit" id="editorSubmit" value="Post" />        </div>
+        <input type="hidden" name="key" id="key" value="44f1e54bc1cc293c765378774c8b6f13" />
+                    </fieldset>
+    </form></div>
+<script type="text/javascript">
+    
+    // <![CDATA[
+	var bbtagsettings = {
+	    b: {
+	        prompts: 1,
+	        1: "Enter the text that you'd like to make bold:" },
+	    i: {
+	        prompts: 1,
+	        1: "Enter the text that you'd like to make italic:" },
+	    u: {
+	        prompts: 1,
+	        1: "Enter the text that you'd like to underline:" },
+	    quote: {
+	        prompts: 1,
+	        1: "Enter the text that you'd like to quote:" },
+	    img: {
+	        prompts: 1,
+	        1: "Enter the full URL of the image you'd like to display:"},
+	        prefill: "http://",
+	    url: {
+	        prompts: 2,
+	        1: "Enter the address of the webpage you'd like to link to:",
+	        2: "Enter the title for this link:"},
+	    artist: {
+	        prompts: 1,
+	        1: "Enter an artist name:",
+	        ajaxian: {restype: 6}},
+	    album: {
+	        prompts: 2,
+	        1: "Enter an album title:",
+	        2: "Enter the artist for this album:",
+	        attr: "artist",
+	        ajaxian: {restype: 8, artist: ""}},
+	    track: {
+	        prompts: 2,
+	        1: "Enter a track name:",
+	        2: "Enter the artist for this track:",
+	        attr: "artist",
+	        ajaxian: {restype: 9, artist: ""}},
+	    user: {
+	        prompts: 1,
+	        1: "Enter a Last.fm user name:",
+	        ajaxian: {restype: 4}},
+	    tag: {
+	        prompts: 1,
+	        1: "Enter a Last.fm tag name:"},
+	    label: {
+	        prompts: 1,
+	        1: "Enter a label name:"},
+	    video: {
+	        prompts: 2,
+	        1: "Enter a track or video name:",
+	        2: "Enter the artist for this video:",
+	        attr: "artist",
+	        ajaxian: {restype: 39, artist: ""}},
+	    youtube: {
+	        prompts: 1,
+	        1: "Enter the web address of the YouTube page containing the video you want to embed:"},
+	    googlevideo: {
+	        prompts: 1,
+	        1: "Enter the web address of the Google Video page containing the video you want to embed:"}, 
+	    event: {
+	        prompts: 2,
+	        1: "Enter the web address of the Event page on Last.fm:",
+	        2: "Enter the link text that will be displayed for the event:",
+	        ajaxian: {restype: 29}},
+	    rescan: {
+	    }
+	}
+    
+    // ]]> 
+</script>
+<script type="text/javascript">
+    
+    // <![CDATA[
+    var editorTranslations = {
+            pleasewait: "Please Wait...",
+            saving: "Saving..."  };
+    
+    var webhost = "www.last.fm";
+    // ]]> 
+</script>
+<script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/bbcode.js"></script>
+<script type="text/javascript" src="http://cdn.last.fm/javascript/release-20080123/69402/editor.js"></script>
+            </div>
+            </div>
+
+  </div><!-- /#LastContent2 -->
+  
+<div id="LastContextSidebar">
+  <div class="sidebar">
+    <div id="avatarPanel" class="lastPanel  noHeader nosave">  <div class="h">
+       </div>
+  <div class="c">
+      <div class="imgHolder">
+	  <a href="/group/Subscribers+and+their+tag+radio+stations">
+	    <img src="http://userserve-ak.last.fm/serve/160/1917521.gif" alt="Subscribers and their tag radio stations’s avatar" />
+	  </a>
+  </div>
+  	
+  <div id="LastWidgets">
+            <a id="rmFriend_w" class="widget" onclick="return confirm('Are you sure you want to leave Subscribers and their tag radio stations?');" href="/group/Subscribers+and+their+tag+radio+stations/join?removetype=4&amp;removeid=2305979"><span>&nbsp;</span>Leave the group</a>
+            <a href="javascript:;" onclick="resourcewidget('tellafriend','widgetNormal');" id="recommend_w" class="widget"><span>&nbsp;</span>Tell a friend about this group</a>
+  </div>
+  
+  <script type="text/javascript">
+      var res_type = 'group';
+      var res_id = 88804;
+  </script>
+
+                         
+		
+	<p class="first">
+	  <strong class="fn">Subscribers and their tag radio stations</strong>
+	  129 members <small>(<a href="/group/Subscribers+and+their+tag+radio+stations/countries">demographics</a>)</small>
+  </p>
+  
+  <p>
+        <strong>Leader:<br /></strong>
+        <span class="subscriberIcon"><a href="/user/Nectar_Card/" title="" class=" ">Nectar_Card</a></span>    <br />
+    <strong>Join Policy:</strong> 
+        Open
+        <br />
+    <strong>Created on:</strong> 25 Jun 2007
+  </p>
+    <p>
+    <strong>Description:</strong>
+    This group is to bring together subscribers who have taken the time to tag and share the music they like.<br />
+<br />
+No specific genre or participation needed. This is just a way to find and listen to great music from other people.<br />
+<br />
+To find tag stations either check in the discussion forum (updated semi regularly) or click on any of our members - they all have streamable tag stations.
+  </p>
+    
+  </div>
+  <div class="f">
+        <span class="iesucks">&nbsp;</span>
+  </div>
+</div>  
+  
+        
+    
+      
+            <div id="debugPanel" class="lastPanel"><div class="h" id="h_debugPanel">
+    <h2>Debug                </h2>
+		    <a href="javascript:;" class="tog collapseTog" id="statetog_debugPanel" title="Collapse Panel"  onclick="return collapseBox('debugPanel', this)" onfocus="blur()"></a>   
+		<br style="clear:both;" />
+</div><div class="c" id="c_debugPanel">            <p>ID: 88804<br />
+               Forum: 59223
+            </p>
+        </div><div class="f" id="f_debugPanel"> <span class="iesucks" style="display:block;">&nbsp;</span></div></div>        
+          <div id="forumSearch" class="lastPanel ">  <div class="h">
+          <h2>Search</h2>
+	  	      <a href="javascript:;" class="tog collapseTog" title="Collapse Panel" onclick="return collapseBox('forumSearch', this);" onfocus="blur();"></a>
+	             </div>
+  <div class="c">
+          
+	    <form  method="get" action="/forum/search">
+          <p><label for="searchterm">Search the forums:</label></p>
+          <input type="text" name="q" id="searchterm" style="width: 150px;" value=""/>
+                    <input type="checkbox" name="forums[]" value="59223" id="justthisone" checked="checked" />
+            <label for="justthisone">
+                                                            just in <strong>Group 'Subscribers and their tag radio stations' Forum</strong>
+                          </label>
+                    <input type="submit" value="Search" />
+          
+          <p id="radiotoggle">
+          <a href="#"  class="viewWidget" onclick="$('moreOptionsView').src=$('moreoptions').style.display==''?'http://cdn.last.fm/depth/sidebars/vw_view.gif':'http://cdn.last.fm/depth/sidebars/vw_view_on.gif';$('moreoptions').style.display=$('moreoptions').style.display==''?'none':'';return false;"><img src="http://cdn.last.fm/depth/sidebars/vw_view.gif" id="moreOptionsView" border="0" width="11" height="11" style="position:relative;bottom:-1px;" alt="View More"/></a>
+          <a href="javascript:;" onclick="$('moreOptionsView').src=$('moreoptions').style.display==''?'http://cdn.last.fm/depth/sidebars/vw_view.gif':'http://cdn.last.fm/depth/sidebars/vw_view_on.gif';$('moreoptions').style.display=$('moreoptions').style.display==''?'none':'';return false;">More options</a></p>
+
+          <fieldset id="moreoptions" style="display:none;"> 
+          <dl class="sidebarInfoList">
+            
+            <dt>Search result ordering</dt>
+            <dd>
+            <input checked="checked" type="radio" name="sortorder" value="" id="best_matching"/><label for="best_matching">Best matching first, ignore date</label>
+            </dd>
+            <dd>
+            <input  type="radio" name="sortorder" value="date desc" id="date_desc"/><label for="date_desc">Newest posts first</label>
+            </dd>
+            <dd>
+            <input  type="radio" name="sortorder" value="date asc" id="date_asc"/><label for="date_asc">Oldest posts first</label>
+            </dd>
+            
+            <dt>Search tips</dt>
+            <dd>You can use quotes (") around search phrases to improve search accuracy</dd>
+            <dd>Check the <a href="/help/faq">Frequently Asked Questions</a> list for common queries</dd>
+
+          </dl>
+          
+          <p>
+            <em>The default is to search all forums listed below.  If you feel like digging deaper please enter a specific forum and then search from there.</em>
+          </p>
+          </fieldset>
+        </form>
+    
+  </div>
+  <div class="f">
+        <span class="iesucks">&nbsp;</span>
+  </div>
+</div>    
+  </div>
+</div>
+
+
+</div><!-- /#LastContent -->
+<div id="LastFooter">
+  
+  <div id="footerMessage">
+      
+    <h3>What's New</h3>
+    <p>
+      <a href="http://blog.last.fm/2008/02/28/build">Extend your Last.fm experience</a> with community extras. &nbsp; | &nbsp; <a href="/sxsw">See pics</a> from our trip to SXSW.    </p>
+    
+  </div><!-- #footerMessage --> 
+  
+  
+        <div id="langSelector" style="display: none;">
+    <ul>
+                        
+                        <li title="German"><img src="http://cdn.last.fm/depth/flags/mini/de.gif" />&nbsp;<a xml:lang="de" lang="de" href="http://www.lastfm.de/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=de">Deutsch</a></li>
+                        <li title="Spanish"><img src="http://cdn.last.fm/depth/flags/mini/es.gif" />&nbsp;<a xml:lang="es" lang="es" href="http://www.lastfm.es/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=es">Español</a></li>
+                        <li title="French"><img src="http://cdn.last.fm/depth/flags/mini/fr.gif" />&nbsp;<a xml:lang="fr" lang="fr" href="http://www.lastfm.fr/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=fr">Français</a></li>
+                        <li title="Italian"><img src="http://cdn.last.fm/depth/flags/mini/it.gif" />&nbsp;<a xml:lang="it" lang="it" href="http://www.lastfm.it/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=it">Italiano</a></li>
+                        <li title="Polish"><img src="http://cdn.last.fm/depth/flags/mini/pl.gif" />&nbsp;<a xml:lang="pl" lang="pl" href="http://www.lastfm.pl/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=pl">Polski</a></li>
+                        <li title="Portuguese"><img src="http://cdn.last.fm/depth/flags/mini/pt.gif" />&nbsp;<a xml:lang="pt" lang="pt" href="http://www.lastfm.com.br/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=pt">Português</a></li>
+                        <li title="Swedish"><img src="http://cdn.last.fm/depth/flags/mini/se.gif" />&nbsp;<a xml:lang="sv" lang="sv" href="http://www.lastfm.se/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=sv">Svenska</a></li>
+                        <li title="Turkish"><img src="http://cdn.last.fm/depth/flags/mini/tr.gif" />&nbsp;<a xml:lang="tr" lang="tr" href="http://www.lastfm.com.tr/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=tr">Türkçe</a></li>
+                        <li title="Russian"><img src="http://cdn.last.fm/depth/flags/mini/ru.gif" />&nbsp;<a xml:lang="ru" lang="ru" href="http://www.lastfm.ru/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=ru">Руccкий</a></li>
+                        <li title="Japanese"><img src="http://cdn.last.fm/depth/flags/mini/jp.gif" />&nbsp;<a xml:lang="ja" lang="ja" href="http://www.lastfm.jp/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=jp">日本語</a></li>
+                        <li title="Chinese"><img src="http://cdn.last.fm/depth/flags/mini/cn.gif" />&nbsp;<a xml:lang="zh" lang="zh" href="http://cn.last.fm/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298546/2?setlang=zh">简体中文</a></li>
+            </ul>
+</div>
+
+<script type="text/javascript">
+    var langSelector = Element.remove("langSelector");
+    var header = $("LastHeader");
+    if (header) {
+        var nextNode = Element.next(header);
+        $("LastWebsite").insertBefore(langSelector, nextNode);
+        Event.observe($$("li#languageToggle a")[0], "click", function (event) {
+            Event.findElement(event, "A").blur();
+            Effect.toggle("langSelector", "slide", {duration: 0.2});
+            Event.stop(event);
+        });
+    }
+</script>
+      
+  <ul id="footerLinks" class="clearit">
+        <li class="first">
+          <dl>
+            <dt><a href="/uploadmusic/">Upload Your Music</a></dt>
+            <dd><a href="/uploadmusic/?accountType=artist">For Artists</a></dd>
+            <dd><a href="/uploadmusic/?accountType=label">For Labels</a></dd>
+                    </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>Resources</dt>
+            <dd><a href="/widgets/">Widgets</a></dd>           <dd><a href="/download/">Download Software</a></dd>
+            <dd><a href="/hardware/">Hardware</a></dd>
+            <dd><a href="/tools/charts/">Image Charts</a></dd>
+            <dd><a href="http://build.last.fm">Plugins &amp; Extras</a></dd>     
+            <dd><a href="/feeds/">Data Feeds</a></dd>
+            <dd><a href="/resources/">Blog Badges &amp; Logo</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt><a href="/music/">Top Charts</a></dt>
+            <dd><a href="/music/+charts/video/">Weekly Music Videos</a></dd>
+            <dd><a href="/music/+charts/artist/">Weekly Top Artists</a></dd>
+            <dd><a href="/music/+charts/track/">Weekly Top Tracks</a></dd>
+            <dd><a href="/music/+tags/">Overall Tag Charts</a></dd>
+            <dd><a href="/music/+charts/free/">Weekly Free Downloads</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt><a href="/forum/">Forums</a></dt>
+            <dd><a href="/forum/21713/">Web Site Support</a></dd>
+            <dd><a href="/forum/34905/">Last.fm Software Support</a></dd>
+            <dd><a href="/forum/21717/">Feedback and Ideas</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt><a href="/about/">About Us</a></dt>
+            <dd><a href="/about/contact/">Contact</a></dd>
+            <dd><a href="/advertise/">Advertise</a></dd>
+            <dd><a href="/about/team/">Team</a></dd>
+            <dd><a href="/about/moderators/">Moderators</a></dd>
+            <dd><a href="/about/jobs/">Careers</a></dd>
+            <dd><a href="http://blog.last.fm/">Last.fm Blog <img src="http://cdn.last.fm/depth/icons/new.gif" alt="New!" /></a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt><a href="/help/">Help</a></dt>
+            <dd><a href="/help/faq/">FAQ</a></dd>
+            <dd><a href="/help/support/">Support</a></dd>            <dd><a href="http://blog.last.fm/">What’s New</a></dd>          </dl>
+        </li>
+    </ul><!-- #footerLinks -->
+
+     
+    <div id="footer_ads"> 
+        <!-- Adserving start -->
+                                        
+                                                                                                        <script type="text/javascript">
+                            document.write('<div id="LastAd_FooterLeft" class="LastAd"');
+                            document.write(' style="display:none;"');                            document.write('>');
+                            if(typeof writeFooterLeft == 'function') writeFooterLeft();
+                            document.write('<\/div>');
+                                                    </script>
+                                                <!-- Adserving end --> 
+        <!-- Adserving start -->
+                                        
+                                                                                                        <script type="text/javascript">
+                            document.write('<div id="LastAd_FooterRight" class="LastAd"');
+                            document.write(' style="display:none;"');                            document.write('>');
+                            if(typeof writeFooterRight == 'function') writeFooterRight();
+                            document.write('<\/div>');
+                                                    </script>
+                                                <!-- Adserving end --> 
+    </div><!-- #promo_images --> 
+     
+    
+    <div id="footerLogos">
+    <a id="scrobblerlink" href="http://www.audioscrobbler.net/" title="Audioscrobbler: The Social Music Technology Playground">
+          <img src="http://cdn.last.fm/depth/footer/audioscrobbler_logo.gif" alt="Powered by Audioscrobbler"/>
+        </a>
+        
+        <p id="slogan">‘The Audioscrobbler That Likes To Say Yes.’</p>
+        
+        <p>
+        &copy; 2002 &#8211; 2008 Last.fm Ltd.
+        <span><a href="/popups/terms/" onclick="window.open('/popups/terms/','faq','toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=yes, resizable=yes, width=450, height=600'); return false">Terms of Use</a></span> <span><a href="/subscribe/">Subscribe</a></span> <span><a href="http://blog.last.fm/">Recent Updates</a></span> <span><a href="http://build.last.fm">Build Last.fm</a></span>
+
+        </p>
+    </div><!-- #footerLogos -->
+</div><!-- #LastFooter -->
+
+</div>
+
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3915391-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    </script>
+
+
+
+</body>
+</html>

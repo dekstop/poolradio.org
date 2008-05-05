@@ -22,9 +22,10 @@ CREATE TABLE sources (
 ) CHARACTER SET utf8;
 
 INSERT INTO sources(id,code,name,description) values(1,'system', 'Admin\'s Choice', null);
-INSERT INTO sources(id,code,name,description) values(2,'manualrecs-feed', 'Last.fm User Recommendations', null);
+INSERT INTO sources(id,code,name,description) values(2,'manualrecs', 'Last.fm User Recommendations', null);
 INSERT INTO sources(id,code,name,description) values(3,'usertags', 'Last.fm User Tags', null);
 INSERT INTO sources(id,code,name,description) values(4,'globaltags', 'Last.fm Global Tags', null);
+INSERT INTO sources(id,code,name,description) values(5,'groupforums', 'Last.fm Group Forums', null);
 
 
 INSERT INTO events(source_id,username,link,radiourl,title,message) VALUES (

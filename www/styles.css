@@ -138,7 +138,7 @@ ul.stations li {
 .right .stations .system .message {
   background-color: #fdfdfd;
 }
-.right .stations .manualrecs-feed .message {
+.right .stations .manualrecs .message {
   background-color: #f0f0ff;
 }
 .right .stations .usertags .message {
@@ -146,6 +146,9 @@ ul.stations li {
 }
 .right .stations .globaltags .message {
   background-color: #ffffe0;
+}
+.right .stations .groupforums .message {
+  background-color: #f0fff0;
 }
 
 .stations .body a {
