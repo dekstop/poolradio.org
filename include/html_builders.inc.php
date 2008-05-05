@@ -9,7 +9,7 @@ function build_station_html($row) {
         htmlspecialchars($row['username']) . '</a> ';
     }
     $html .= '</div> ' .
-        '<div class="footer"><span class="source">' . htmlspecialchars($row['source_name']) . '</span> <span class="date">' . date('Y-m-d H:i', $row['date']) . '</span></div>';
+        '<div class="footer"><span class="source">' . htmlspecialchars($row['source_name']) . '</span> <span class="date">' . date('Y-m-d', $row['date']) . '</span></div>';
     if (array_key_exists('wikipedia_link', $row)) {
         $html .= '<div class="context"><span class="description">' .
         '<a href="' . htmlspecialchars($row['wikipedia_link']) . '" ' .
