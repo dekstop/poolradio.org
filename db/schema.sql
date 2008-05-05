@@ -22,7 +22,7 @@ CREATE TABLE sources (
 ) CHARACTER SET utf8;
 
 INSERT INTO sources(id,code,name,description) values(1,'system', 'Admin\'s Choice', null);
-INSERT INTO sources(id,code,name,description) values(2,'manualrecs-feed', 'Last.fm User Recommendations Feed', null);
+INSERT INTO sources(id,code,name,description) values(2,'manualrecs-feed', 'Last.fm User Recommendations', null);
 INSERT INTO sources(id,code,name,description) values(3,'usertags', 'Last.fm User Tags', null);
 INSERT INTO sources(id,code,name,description) values(4,'globaltags', 'Last.fm Global Tags', null);
 
