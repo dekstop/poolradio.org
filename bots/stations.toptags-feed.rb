@@ -73,6 +73,7 @@ data = http_get(@prefs[:url])
 
 # iterate
 num_events_created = 0
+num_tags_skipped = 0
 doc = REXML::Document.new(data)
 doc.elements.each('toptags/tag') do |item|
   tagname = item.attributes['name']
@@ -92,7 +93,8 @@ doc.elements.each('toptags/tag') do |item|
     })
 
     if (existing_events.size > 0)
-      puts "Skipping: entry for #{radiourl} by user #{@prefs[:username]} already exists"
+      #puts "Skipping: entry for #{radiourl} by user #{@prefs[:username]} already exists"
+      num_tags_skipped += 1
     else
       # update
       begin
@@ -119,5 +121,5 @@ doc.elements.each('toptags/tag') do |item|
   end
 end
 
-puts "Inserted #{num_events_created} new events"
+puts "Inserted #{num_events_created} new events, skipped #{num_tags_skipped} known tags"
 
