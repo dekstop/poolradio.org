@@ -87,7 +87,9 @@ end
 # returns a list of records [{:radiourl => '...', :title => '...'}, ...]
 def extract_stations_from_post(node)
   links = (node/"div[@class='messageContent]/a")
-  links.map do |link|
+  links.select do |link|
+    link.bogusetag? ? false : true
+  end.map do |link|
     {
       :href => link['href'],
       :text => link.inner_html.gsub(/<\/?[^>]*>/, "")
