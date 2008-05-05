@@ -37,7 +37,7 @@ if (!$db) {
     <span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
     <?
-    $result = query_for_latest(20, 24);
+    $result = query_for_latest(5, 24);
     if (mysql_num_rows($result) > 0) {
     ?>
     <h3>Recently Added</h3>
