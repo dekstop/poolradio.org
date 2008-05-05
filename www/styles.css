@@ -70,18 +70,15 @@ hr {
 /* = main = */
 /* ======== */
 
-#main { 
-}
-
 #main .left {
   width: 500px;
   padding-right: 50px;
 }
 
-#main .left div.footer .date {
+#main .left .footer .date {
   display: none;
 }
-#main .left div.footer .source {
+#main .left .footer .source {
   display: none;
 }
 
@@ -90,17 +87,19 @@ hr {
   width: 300px;
 }
 
-#main .right div.header {
+#main .right .header {
   display: inline;
 }
-#main .right div.body {
+#main .right .body {
   display: inline;
 }
-#main .right div.footer {
+#main .right .footer {
   display: inline;
 }
-
-#main .right div.footer .source {
+#main .right .context {
+  display: inline;
+}
+#main .right .footer .source {
   display: none;
 }
 
