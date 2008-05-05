@@ -32,6 +32,20 @@ function query_for_random($num=10) {
     return mysql_query($query);
 }
 
+function query_for_random_latest($num=10, $cutoff_in_hours=24) {
+    $id_result = mysql_query(
+        sprintf("SELECT id FROM events WHERE created_at > subtime(now(), '%s') ",
+            mysql_real_escape_string(intval($cutoff_in_hours) . ':0:0.0')));
+    $recent_ids = array();
+    while ($row = mysql_fetch_assoc($id_result)) {
+        $recent_ids[] = $row['id'];
+    }
+    $ids = array_rand($recent_ids, $num);
+    $query = _build_query(
+        sprintf("WHERE e.id IN (%s) ORDER BY e.id DESC", implode(', ', $ids)));
+    return mysql_query($query);
+}
+
 function query_for_latest($num=10, $cutoff_in_hours=24) {
     $id_result = mysql_query(
         sprintf("SELECT id FROM events WHERE created_at > subtime(now(), '%s') ".
