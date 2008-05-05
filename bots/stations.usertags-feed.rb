@@ -84,6 +84,7 @@ users.sort_by { rand }.each do |username|
   #data = File.read('../data/usertags-jirkanne.xml')
 
   # iterate
+  num_tags_skipped = 0
   num_events_created = 0
   doc = REXML::Document.new(data)
   doc.elements.each('toptags/tag') do |item|
@@ -103,7 +104,8 @@ users.sort_by { rand }.each do |username|
       })
 
       if (existing_events.size > 0)
-        puts "Skipping: entry for #{radiourl} by user #{username} already exists"
+        #puts "Skipping: entry for #{radiourl} by user #{username} already exists"
+        num_tags_skipped += 1
       else
         # update
         begin
@@ -131,7 +133,7 @@ users.sort_by { rand }.each do |username|
   
   sleep @prefs[:sleep]
   
-  puts "Inserted #{num_events_created} new events"
+  puts "Inserted #{num_events_created} new events, skipped #{num_tags_skipped} known tags"
   $stdout.flush
 end
 
