@@ -31,6 +31,7 @@ function checkResult() {
 echo "Running daily CRON ..."
 date
 
+checkResult ruby ${APP_ROOT}/bots/auto-add.usertags-users.rb
 checkResult ruby ${APP_ROOT}/bots/stations.usertags-feed.rb
 checkResult ruby ${APP_ROOT}/bots/stations.toptags-feed.rb
 checkResult ruby ${APP_ROOT}/bots/stations.manualrecs-feed.rb
