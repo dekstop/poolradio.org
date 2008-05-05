@@ -5,7 +5,7 @@ function build_station_html($row) {
         htmlspecialchars($row['title'] ? $row['title'] : $row['radiourl']) . '</a></div> ' .
         '<div class="body"><span class="message"><a href="' . htmlspecialchars($row['link']) . '">' . htmlspecialchars($row['message']) . '</a></span>';
     if (strcasecmp(LASTFM_USERNAME, $row['username']) != 0) {
-        $html .= ' by <a href="http://www.last.fm/user/' . htmlspecialchars($row['username']) . '">' .
+        $html .= ' by <a href="http://www.last.fm/user/' . urlencode($row['username']) . '">' .
         htmlspecialchars($row['username']) . '</a> ';
     }
     $html .= '</div> ' .
