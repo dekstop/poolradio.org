@@ -23,7 +23,7 @@ if (!$db) {
   <td valign="top" class="left">  
     <ul class="stations">
     <?
-    $result = query_for_random(10);
+    $result = query_for_random(7);
     while ($row = mysql_fetch_assoc($result)) {
     ?>
         <li><?= build_station_html($row) ?></li>
