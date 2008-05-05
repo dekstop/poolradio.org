@@ -97,7 +97,7 @@ hr {
   display: inline;
 }
 #main .right .context {
-  display: inline;
+  display: none;
 }
 #main .right .footer .source {
   display: none;
