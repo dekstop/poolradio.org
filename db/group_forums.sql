@@ -4,7 +4,7 @@ CREATE TABLE group_forums (
   created_at TIMESTAMP NOT NULL,
 
   forum_id INTEGER UNIQUE NOT NULL,
-  groupname VARCHAR(200)
+  groupname VARCHAR(200) UNIQUE
 ) CHARACTER SET utf8;
 
 INSERT INTO group_forums(forum_id, groupname) VALUES (59223, 'Subscribers and their tag radio stations');
