@@ -40,7 +40,11 @@ function query_for_random_latest($num=10, $cutoff_in_hours=24) {
     while ($row = mysql_fetch_assoc($id_result)) {
         $recent_ids[] = $row['id'];
     }
-    $ids = array_rand($recent_ids, $num);
+    $indices = array_rand($recent_ids, $num);
+    $ids = array();
+    foreach ($indices as $idx) {
+        $ids[] = $recent_ids[$idx];
+    }
     $query = _build_query(
         sprintf("WHERE e.id IN (%s) ORDER BY e.id DESC", implode(', ', $ids)));
     return mysql_query($query);
