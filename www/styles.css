@@ -66,14 +66,28 @@ hr {
   margin-bottom: 1em;
 }
 
+/* ======== */
+/* = main = */
+/* ======== */
+
+#main { 
+}
+
+#main .left {
+  width: 500px;
+  padding-right: 50px;
+}
+
+#main .right {
+  width: 300px;
+}
+
+
+
+
 /* ============ */
 /* = stations = */
 /* ============ */
-
-.stations {
-  width: 500px;
-}
-
 
 .stations .radiourl {
   font-size: 1.2em;
