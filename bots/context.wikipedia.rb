@@ -111,7 +111,7 @@ DB = Sequel.connect(
 # find events without description
 # (limit to newer events so we don't keep re-fecthing the same stuff over and over
 # in cases where we always get an empty result)
-count = 0
+num_descriptions_created = 0
 query = ('SELECT e.id AS id, e.title AS title FROM events e ' +
   'LEFT OUTER JOIN wikipedia_descriptions w ON e.id=w.event_id ' +
   'WHERE w.id IS NULL AND e.created_at>subtime(now(), "%s") ' +
@@ -145,7 +145,7 @@ events.each do |row|
         :link => desc[:link],
         :description => desc[:description],
       }
-      count += 1
+      num_descriptions_created += 1
     end
   rescue Mysql::Error
     puts "Mysql error: #{$!.message}"
@@ -168,4 +168,4 @@ events.each do |row|
   sleep n
 end
 
-puts "Found #{count} new descriptions for #{events.size} events"
+puts "Found #{num_descriptions_created} new descriptions for #{events.size} events"

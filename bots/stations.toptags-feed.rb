@@ -72,7 +72,7 @@ data = http_get(@prefs[:url])
 #data = File.read('../data/toptags.xml')
 
 # iterate
-count = 0
+num_events_created = 0
 doc = REXML::Document.new(data)
 doc.elements.each('toptags/tag') do |item|
   tagname = item.attributes['name']
@@ -105,7 +105,7 @@ doc.elements.each('toptags/tag') do |item|
           :title => title,
           :message => message
         }
-        count += 1
+        num_events_created += 1
       rescue Mysql::Error
         puts "Mysql error: #{$!.message}"
         require 'pp'
@@ -119,5 +119,5 @@ doc.elements.each('toptags/tag') do |item|
   end
 end
 
-puts "Inserted #{count} new events"
+puts "Inserted #{num_events_created} new events"
 

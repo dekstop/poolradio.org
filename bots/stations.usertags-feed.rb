@@ -84,7 +84,7 @@ users.sort_by { rand }.each do |username|
   #data = File.read('../data/usertags-jirkanne.xml')
 
   # iterate
-  count = 0
+  num_events_created = 0
   doc = REXML::Document.new(data)
   doc.elements.each('toptags/tag') do |item|
     tagname = item.elements['name'].text
@@ -115,7 +115,7 @@ users.sort_by { rand }.each do |username|
             :title => title,
             :message => message
           }
-          count += 1
+          num_events_created += 1
         rescue Mysql::Error
           puts "Mysql error: #{$!.message}"
           require 'pp'
@@ -131,7 +131,7 @@ users.sort_by { rand }.each do |username|
   
   sleep @prefs[:sleep]
   
-  puts "Inserted #{count} new events"
+  puts "Inserted #{num_events_created} new events"
   $stdout.flush
 end
 

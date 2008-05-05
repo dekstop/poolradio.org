@@ -84,7 +84,7 @@ data = http_get(@prefs[:url])
 
 # iterate
 doc = REXML::Document.new(data)
-count = 0
+num_events_created = 0
 doc.elements.each('rss/channel/item') do |item|
   title = item.elements['title'].text
   link = item.elements['link'].text
@@ -121,7 +121,7 @@ doc.elements.each('rss/channel/item') do |item|
           :title => title,
           :message => description
         }
-        count += 1
+        num_events_created += 1
       rescue Mysql::Error
         puts "Mysql error: #{$!.message}"
         require 'pp'
@@ -136,4 +136,4 @@ doc.elements.each('rss/channel/item') do |item|
   $stdout.flush
 end
 
-puts "Inserted #{count} new events"
+puts "Inserted #{num_events_created} new events"
