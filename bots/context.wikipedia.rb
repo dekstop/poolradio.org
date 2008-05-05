@@ -65,9 +65,9 @@ def extract_title(doc)
 end
 
 def extract_link(doc)
-  node = (doc/"div[@class='g']/h2[@class='r]/a[@class='l]").first
-  if (node)
-    node['href']
+  nodes = (doc/"div[@class='g']/h2[@class='r']/a[@class='l'][@href]")
+  if (nodes.size > 0)
+    nodes.first['href']
   else
     nil
   end

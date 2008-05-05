@@ -76,7 +76,9 @@ def extract_username_from_post(node)
 end
 
 def extract_permalink_from_post(node)
-  link = (node/"a[@class='permalinkbutton']").first['href']
+  links = (node/"a[@class='permalinkbutton'][@href]")
+  return nil unless links.size>0
+  link = links.first['href']
   if (link.match(/^http:\/\/.*/))
     link
   else
@@ -86,10 +88,8 @@ end
 
 # returns a list of records [{:radiourl => '...', :title => '...'}, ...]
 def extract_stations_from_post(node)
-  links = (node/"div[@class='messageContent]/a")
-  links.select do |link|
-    link.bogusetag? ? false : true
-  end.map do |link|
+  links = (node/"div[@class='messageContent]/a[@href]")
+  links.map do |link|
     {
       :href => link['href'],
       :text => link.inner_html.gsub(/<\/?[^>]*>/, "")
