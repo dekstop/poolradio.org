@@ -21,4 +21,14 @@ function build_station_html($row) {
     return $html;
 }
 
+# caution: each item will get urlencoded
+function build_link_sequence_html($link_prefix, $items) {
+    $links = array();
+    foreach ($items as $item) {
+        $links[] = 
+            '<a href="' . $link_prefix . urlencode($item) . '">' . htmlspecialchars($item) . '</a>';
+    }
+    return implode(', ', $links);
+}
+
 ?>

@@ -21,6 +21,7 @@ ini_set('include_path', ini_get('include_path') . ':' . LIB_ROOT);
 #require_once('DB/DB.php');
 
 require_once('db_queries.inc.php');
+require_once('db_getters.inc.php');
 require_once('html_builders.inc.php');
 
 

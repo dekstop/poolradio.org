@@ -108,6 +108,10 @@ hr {
 }
 
 
+div.sources {
+  margin-top: 2em;
+}
+
 ul.stations {
   list-style: none;
   margin-left: 0;
@@ -116,6 +120,16 @@ ul.stations {
 }
 ul.stations li {
   margin-bottom: 1em;
+}
+
+ul.sources {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+ul.sources li {
+  margin-bottom: 0.5em;
 }
 
 
@@ -168,6 +182,20 @@ ul.stations li {
   color: #cccccc;
 }
 
+.more {
+  margin-top: 2em;
+  color: #cccccc;
+}
+.more a {
+  color: #cccccc;
+}
+
+
+
+/* ========= */
+/* = about = */
+/* ========= */
+
 p.about {
   font-size: 0.8em;
 }
@@ -179,10 +207,18 @@ p.about .credits a {
   color: #cccccc;
 }
 
-.more {
-  margin-top: 2em;
-  color: #cccccc;
+/* =========== */
+/* = sources = */
+/* =========== */
+
+div.sources {
+  color: #cccccc;  
 }
-.more a {
-  color: #cccccc;
+div.sources a {
+  color: #cccccc;  
+}
+
+
+ul.sources li {
+  font-size: 0.5em;
 }

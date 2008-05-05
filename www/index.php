@@ -50,7 +50,21 @@ if (!$db) {
         }
     }
     ?>
-    </ul></td>
+    </ul>
+    
+    <div class="sources">
+    <h3>Sources</h3>
+    <ul class="sources">
+        <li><a href="http://www.last.fm/music/+tags/">Global Tags Chart</a>.</li>
+        <li>Tags by 
+            <? $users = get_usertags_users(); ?>
+            <?= build_link_sequence_html('http://www.last.fm/user/', $users) ?>.</li>
+        <li>Group Forums for 
+            <? $groups = get_groupforum_groups(); ?>
+            <?= build_link_sequence_html('http://www.last.fm/group/', $groups) ?>.</li>
+        <li>Your Recommendations for <a href="http://www.last.fm/user/poolradio/">poolradio</a>.</li>
+    </ul>
+    </div></td>
 </tr>
 </table>
 <?

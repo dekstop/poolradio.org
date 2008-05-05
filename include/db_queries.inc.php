@@ -1,4 +1,7 @@
 <?
+#
+# these functions return mysql result handles
+#
 
 function _build_query($sql_suffix) {
     return "SELECT " .
