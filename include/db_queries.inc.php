@@ -2,7 +2,7 @@
 
 function _build_query($sql_suffix) {
     return "SELECT " .
-        "s.name AS source, UNIX_TIMESTAMP(e.created_at) AS date, e.username AS username, e.link AS link, " .
+        "s.code AS source, s.name AS source_name, UNIX_TIMESTAMP(e.created_at) AS date, e.username AS username, e.link AS link, " .
         "e.radiourl AS radiourl, e.title AS title, e.message AS message, " .
         "w.link AS wikipedia_link, w.title AS wikipedia_title, w.description AS wikipedia_description " .
         "FROM events e INNER JOIN sources s ON s.id=e.source_id " .

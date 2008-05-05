@@ -126,9 +126,26 @@ ul.stations li {
 .stations .radiourl {
   font-size: 1.2em;
 }
-
+/*.left .stations .header .radiourl {
+  padding-right: 1em;
+  background-color: #ffffff;
+}
+*/
 .stations .message {
   background-color: #f8f8f8;
+}
+
+.right .stations .system .message {
+  background-color: #fdfdfd;
+}
+.right .stations .manualrecs-feed .message {
+  background-color: #f0f0ff;
+}
+.right .stations .usertags .message {
+  background-color: #fff0f0;
+}
+.right .stations .globaltags .message {
+  background-color: #ffffe0;
 }
 
 .stations .body a {
