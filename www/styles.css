@@ -78,16 +78,37 @@ hr {
   padding-right: 50px;
 }
 
+#main .left div.footer .date {
+  display: none;
+}
+#main .left div.footer .source {
+  display: none;
+}
+
+
 #main .right {
   width: 300px;
 }
 
+#main .right div.header {
+  display: inline;
+}
+#main .right div.body {
+  display: inline;
+}
+#main .right div.footer {
+  display: inline;
+}
+
+#main .right div.footer .source {
+  display: none;
+}
 
 
 
-/* ============ */
-/* = stations = */
-/* ============ */
+/* ============= */
+/* = fonts etc = */
+/* ============= */
 
 .stations .radiourl {
   font-size: 1.2em;
