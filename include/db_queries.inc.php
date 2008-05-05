@@ -46,7 +46,7 @@ function query_for_random_latest($num=10, $cutoff_in_hours=24) {
         $ids[] = $recent_ids[$idx];
     }
     $query = _build_query(
-        sprintf("WHERE e.id IN (%s) ORDER BY e.id DESC", implode(', ', $ids)));
+        sprintf("WHERE e.id IN (%s) DESC", implode(', ', $ids)));
     return mysql_query($query);
 }
 
