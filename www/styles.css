@@ -87,6 +87,10 @@ hr {
   width: 300px;
 }
 
+#main .right .stations {
+  font-size:0.7em;
+}
+
 #main .right .header {
   display: inline;
 }
@@ -103,6 +107,16 @@ hr {
   display: none;
 }
 
+
+ul.stations {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+ul.stations li {
+  margin-bottom: 1em;
+}
 
 
 /* ============= */
@@ -127,11 +141,10 @@ hr {
 }
 
 .stations .context {
+  text-indent: 1em;
   color: #cccccc;
 }
-
 .stations .context a {
-  margin-left: 1em;
   color: #cccccc;
 }
 

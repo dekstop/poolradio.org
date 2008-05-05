@@ -21,16 +21,16 @@ if (!$db) {
 <table id="main">
 <tr>
   <td valign="top" class="left">  
-    <div class="stations">
+    <ul class="stations">
     <?
     $result = query_for_random(10);
     while ($row = mysql_fetch_assoc($result)) {
     ?>
-    <p><?= build_station_html($row) ?></p>
+        <li><?= build_station_html($row) ?></li>
     <?
     }
     ?>
-    </div>
+    </ul>
     <p class="more"><a href="<?= HOMEPAGE_URL ?>">Show me more</a></p></td>
   <td valign="top" class="right">
     <p class="about">Recommend great Last.fm tag radio stations to <a href="http://www.last.fm/user/poolradio/">poolradio</a>.<br/>
@@ -41,16 +41,16 @@ if (!$db) {
     if (mysql_num_rows($result) > 0) {
     ?>
     <h3>Recently Added</h3>
-    <div style="font-size:0.7em" class="stations">
+    <ul class="stations">
     <?
         while ($row = mysql_fetch_assoc($result)) {
     ?>
-    <p><?= build_station_html($row) ?></p>
+        <li><?= build_station_html($row) ?></li>
     <?
         }
     }
     ?>
-    </div></td>
+    </ul></td>
 </tr>
 </table>
 <?
