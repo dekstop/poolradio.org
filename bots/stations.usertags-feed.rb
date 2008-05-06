@@ -77,11 +77,22 @@ end
 
 puts "#{users.size} users in queue"
 
+num_events_created_overall = 0
 users.sort_by { rand }.each do |username|
   feed_url = @prefs[:url] % [username]
   puts "#{feed_url} ..."
-  data = http_get(feed_url)
-  #data = File.read('../data/usertags-jirkanne.xml')
+
+  data = nil
+  begin
+    data = http_get(feed_url)
+    #data = File.read('../data/usertags-jirkanne.xml')
+  rescue Exception
+    if ($!.message.match(/^HTTP 404.*/))
+      puts "HTTP 404 -> skipping"
+    else
+      raise $!
+    end
+  end
 
   # iterate
   num_stations_skipped = 0
@@ -134,6 +145,8 @@ users.sort_by { rand }.each do |username|
   sleep @prefs[:sleep]
   
   puts "Inserted #{num_events_created} new events, skipped #{num_stations_skipped} known stations"
+  num_events_created_overall += num_events_created
   $stdout.flush
 end
 
+puts "Inserted #{num_events_created_overall} new events in total"

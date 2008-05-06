@@ -129,6 +129,7 @@ end
 
 puts "#{forum_ids.size} forums in queue"
 
+num_events_created_overall = 0
 forum_ids.sort_by { rand }.each do |forum_id|
   feed_url = @prefs[:url] % [forum_id]
   puts "#{feed_url} ..."
@@ -196,8 +197,10 @@ forum_ids.sort_by { rand }.each do |forum_id|
       end
     end
     puts "Inserted #{num_events_created} new events, skipped #{num_stations_skipped} known stations"
+    num_events_created_overall += num_events_created
   end
   
   $stdout.flush
 end
 
+puts "Inserted #{num_events_created_overall} new events in total"
