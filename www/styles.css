@@ -173,6 +173,9 @@ ul.stations {
 .stations .context a {
   color: #cccccc;
 }
+.stations .context a:hover {
+  color: #f0f0ff;
+}
 
 .more {
   margin-top: 2em;
@@ -180,6 +183,9 @@ ul.stations {
 }
 .more a {
   color: #cccccc;
+}
+.more a:hover {
+  color: #f0f0ff;
 }
 
 
@@ -198,6 +204,9 @@ p.about .credits {
 p.about .credits a {
   color: #cccccc;
 }
+p.about .credits a:hover {
+  color: #f0f0ff;
+}
 
 /* =========== */
 /* = sources = */
@@ -209,6 +218,9 @@ div.sources {
 }
 div.sources a {
   color: #cccccc;  
+}
+div.sources a:hover {
+  color: #f0f0ff;
 }
 
 
