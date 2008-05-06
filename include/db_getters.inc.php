@@ -22,4 +22,15 @@ function get_groupforum_groups() {
     }
     return $result;
 }
+
+# returns all sources and their IDs
+function get_all_sources() {
+    $handle = mysql_query("SELECT id, code, name FROM sources ORDER BY id ASC");
+    $result = array();
+    while ($row = mysql_fetch_assoc($handle)) {
+        $result[] = $row;
+    }
+    return $result;
+}
+
 ?>
