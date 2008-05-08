@@ -24,10 +24,12 @@ if (!$db) {
         <ul class="stations">
         <?
         $result = query_for_random(7);
-        while ($row = mysql_fetch_assoc($result)) {
+        if ($result) {
+            while ($row = mysql_fetch_assoc($result)) {
         ?>
             <li><?= build_station_html($row) ?></li>
         <?
+            }
         }
         ?>
         </ul>
@@ -38,7 +40,7 @@ if (!$db) {
 
         <?
         $result = query_for_random_latest(5, 24);
-        if (mysql_num_rows($result) > 0) {
+        if ($result && mysql_num_rows($result) > 0) {
         ?>
         <h3>Recently Added</h3>
         <ul class="stations">
