@@ -104,15 +104,17 @@ if (!$db) {
     <td valign="top" class="right">        
         <?
         $result = query_for_latest(50, 9999999);
-        if (mysql_num_rows($result) > 0) {
+        if ($result) {
+            if (mysql_num_rows($result) > 0) {
         ?>
         <h3>Recently Added</h3>
         <ul class="stations">
         <?
-            while ($row = mysql_fetch_assoc($result)) {
+                while ($row = mysql_fetch_assoc($result)) {
         ?>
             <li><?= build_station_html($row) ?></li>
         <?
+                }
             }
         }
         ?>

@@ -73,7 +73,7 @@ function query_for_latest($num=10, $cutoff_in_hours=24) {
     while ($row = mysql_fetch_assoc($id_result)) {
         $ids[] = $row['id'];
     }
-    if (count($recent_ids)==0) {
+    if (count($ids)==0) {
         return null;
     }
     $query = _build_query(
