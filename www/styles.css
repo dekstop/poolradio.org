@@ -163,15 +163,15 @@ ul.stations {
 
 .stations .footer {
   font-size: 0.8em;
-  color: #cccccc;
+  color: #bbbbbb;
 }
 
 .stations .context {
   text-indent: 1em;
-  color: #cccccc;
+  color: #bbbbbb;
 }
 .stations .context a {
-  color: #cccccc;
+  color: #bbbbbb;
 }
 .stations .context a:hover {
   color: #f0f0ff;
@@ -179,10 +179,10 @@ ul.stations {
 
 .more {
   margin-top: 2em;
-  color: #cccccc;
+  color: #bbbbbb;
 }
 .more a {
-  color: #cccccc;
+  color: #bbbbbb;
 }
 .more a:hover {
   color: #f0f0ff;
@@ -199,10 +199,10 @@ p.about {
 }
 
 p.about .credits {
-  color: #cccccc;
+  color: #bbbbbb;
 }
 p.about .credits a {
-  color: #cccccc;
+  color: #bbbbbb;
 }
 p.about .credits a:hover {
   color: #f0f0ff;
