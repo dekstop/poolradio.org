@@ -214,10 +214,10 @@ p.about .credits a:hover {
 
 div.sources {
   margin-top: 1.5em;
-  color: #cccccc;  
+  color: #bbbbbb;  
 }
 div.sources a {
-  color: #cccccc;  
+  color: #bbbbbb;  
 }
 div.sources a:hover {
   color: #f0f0ff;
@@ -235,5 +235,5 @@ ul.sources li {
 }
 
 ul.sources li {
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
