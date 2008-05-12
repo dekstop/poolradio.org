@@ -160,9 +160,6 @@ forum_ids.sort_by { rand }.each do |forum_id|
       permalink = extract_permalink_from_post(node)
 
       stations.each do |station|
-        require 'pp'
-        pp station
-        
         radiourl = station[:radiourl]
         title = station[:title]
         
