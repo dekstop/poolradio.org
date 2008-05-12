@@ -59,11 +59,11 @@ end
 # takes a Last.fm page URL, transforms it into a radio URL. Might return nil
 def build_radiourl_from_link(link)
   return nil if link.nil?
-  if (matches = link.match(/http:\/\/.*\/user\/([^\/]+)\/tags\/([^\/]+)\/?/))
+  if (matches = link.match(%r{http://.*/user/([^/]+)/tags/([^/]+)/?}))
     'lastfm://usertags/%s/%s' % [
       CGI.escape(matches.captures[0]), 
       CGI.escape(matches.captures[1])]
-  elsif (matches = link.match(/http:\/\/.*\/tag\/([^\/]+)/))
+  elsif (matches = link.match(%r{http://.*/tag/([^/]+)/?}))
     'lastfm://globaltags/%s' % [
       CGI.escape(matches.captures[0])]
   else 
@@ -72,14 +72,14 @@ def build_radiourl_from_link(link)
 end
 
 def extract_username_from_post(node)
-  (node/"ul[@class='commentUserDetails']/li[@class='userName]/span[1]").text.gsub(/<\/?[^>]*>/, "")
+  (node/"ul[@class='commentUserDetails']/li[@class='userName]/span[1]").text.gsub(%r{</?[^>]*>}, "")
 end
 
 def extract_permalink_from_post(node)
   links = (node/"a[@class='permalinkbutton'][@href]")
   return nil unless links.size>0
   link = links.first['href']
-  if (link.match(/^http:\/\/.*/))
+  if (link.match(%r{^http://.*}))
     link
   else
     "http://www.last.fm#{link}"
@@ -92,7 +92,7 @@ def extract_stations_from_post(node)
   links.map do |link|
     {
       :href => link['href'],
-      :text => link.inner_html.gsub(/<\/?[^>]*>/, "")
+      :text => link.inner_html.gsub(%r{</?[^>]*>}, "")
     }
   end.map do |link|
     {
@@ -105,7 +105,7 @@ def extract_stations_from_post(node)
 end
 
 def extract_posts_from_page(doc)
-  (doc/"li[@class='comment']")
+  (doc/"li[@class='comment']") + (doc/"li[@class='comment alt']")
 end
 
 # ========

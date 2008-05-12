@@ -58,7 +58,7 @@ end
 def extract_title(doc)
   node = (doc/"div[@class='g']/h2[@class='r]/").first
   if (node)
-    node.inner_html.gsub(/<\/?[^>]*>/, "")
+    node.inner_html.gsub(%r{</?[^>]*>}, "")
   else
     nil
   end
@@ -79,7 +79,7 @@ def extract_description(doc)
   node = (doc/"div[@class='g']/table/tr/td/div").first
   matches = node.inner_html.match(/^(.*?)<span.*$/)
   if (matches)
-    CGI.unescapeHTML(matches.captures.first).gsub(/<\/?[^>]*>/, "")
+    CGI.unescapeHTML(matches.captures.first).gsub(%r{</?[^>]*>}, "")
   else 
     nil
   end

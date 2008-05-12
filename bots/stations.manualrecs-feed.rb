@@ -61,7 +61,7 @@ end
 # ...
 def build_radiourl_from_lastfm_listen_url(url)
   path = extract_request_path(url)
-  matches = path.match(/^\/listen\/(.+)$/)
+  matches = path.match(%r{^/listen/(.+)$})
   if (matches)
     "lastfm://#{matches.captures.first}"
   end
