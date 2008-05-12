@@ -129,8 +129,6 @@ end
 
 puts "#{forum_ids.size} forums in queue"
 
-forum_ids = [59223]
-
 num_events_created_overall = 0
 forum_ids.sort_by { rand }.each do |forum_id|
   feed_url = @prefs[:url] % [forum_id]
