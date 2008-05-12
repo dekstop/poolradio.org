@@ -1,11 +1,19 @@
 martind 2008-05-04, 13:05:45
 
+ ========
+ = bugs =
+ ========
+
+- james' post didn't get added! why?
+  http://www.last.fm/group/Subscribers+and+their+tag+radio+stations/forum/59223/_/298566
+
  ================
  = more sources =
  ================
 
+event radio!
+
 are groups a good source? (for tags, station URLs) -> group forums, journals
-- http://last.fm/group/Subscribers+and+their+tag+radio+stations/
 - http://last.fm/group/Music+Advice+Center
 - http://last.fm/group/netlabels
 - http://last.fm/group/Subscribers+and+their+tag+radio+stations
@@ -27,6 +35,9 @@ journals?
          
 labels?  
 - http://last.fm/label/Static+Discos
+
+users' tag descriptions
+- http://www.last.fm/user/farangstar/journal/2007/04/1/384370/
 
 
  ========================

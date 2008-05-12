@@ -59,7 +59,7 @@ end
 # takes a Last.fm page URL, transforms it into a radio URL. Might return nil
 def build_radiourl_from_link(link)
   return nil if link.nil?
-  if (matches = link.match(/http:\/\/.*\/user\/([^\/]+)\/tags\/([^\/]+)/))
+  if (matches = link.match(/http:\/\/.*\/user\/([^\/]+)\/tags\/([^\/]+)\/?/))
     'lastfm://usertags/%s/%s' % [
       CGI.escape(matches.captures[0]), 
       CGI.escape(matches.captures[1])]
@@ -88,7 +88,7 @@ end
 
 # returns a list of records [{:radiourl => '...', :title => '...'}, ...]
 def extract_stations_from_post(node)
-  links = (node/"div[@class='messageContent]/a[@href]")
+  links = (node/"div[@class='messageContent'] a[@href]")
   links.map do |link|
     {
       :href => link['href'],
@@ -129,6 +129,8 @@ end
 
 puts "#{forum_ids.size} forums in queue"
 
+forum_ids = [59223]
+
 num_events_created_overall = 0
 forum_ids.sort_by { rand }.each do |forum_id|
   feed_url = @prefs[:url] % [forum_id]
@@ -160,6 +162,9 @@ forum_ids.sort_by { rand }.each do |forum_id|
       permalink = extract_permalink_from_post(node)
 
       stations.each do |station|
+        require 'pp'
+        pp station
+        
         radiourl = station[:radiourl]
         title = station[:title]
         
