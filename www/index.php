@@ -35,7 +35,8 @@ if (!$db) {
         </ul>
         <p class="more"><a href="<?= HOMEPAGE_URL ?>">Show me more</a></p></td>
     <td valign="top" class="right">
-        <p class="about">Recommend great Last.fm tag radio stations to <a href="http://www.last.fm/user/poolradio/">poolradio</a>.<br/>
+        <p class="about">Recommend great Last.fm tag radio stations to <a href="http://www.last.fm/user/poolradio/">poolradio</a>. <br/>
+        Confused by all this? Read "<a href="http://dekstop.de/weblog/2008/05/pool_radio/">Pool Radio: An Aggregator of Mediators</a>".<br/>
         <span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
 
         <?
