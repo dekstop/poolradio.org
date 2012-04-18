@@ -35,6 +35,7 @@ if (!$db) {
         </ul>
         <p class="more"><a href="<?= HOMEPAGE_URL ?>">Show me more</a></p></td>
     <td valign="top" class="right">
+        <p class="dead">NOTE: <a href="http://www.last.fm/forum/21717/_/653360/1">Last.fm stopped user tag radio stations</a> in October 2010, so the utility of this site is much diminished... Consequently we ceased crawling for new radio stations. </p>
         <p class="about"><!-- Recommend great Last.fm tag radio stations to <a href="http://www.last.fm/user/poolradio/">poolradio</a>. <br/> -->
         Confused by all this? Read "<a href="http://dekstop.de/weblog/2008/05/pool_radio/">Pool Radio: An Aggregator of Mediators</a>".<br/>
         <span class="credits"><a href="http://martin.dekstop.de/">martind</a> 2k8</span></p>
